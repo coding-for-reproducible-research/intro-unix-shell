@@ -5,20 +5,21 @@ title: Course Information
 
 
 ## Overview
+The Unix system and the shell predates most computational interfaces (e.g. the graphical user interface). Although very old, Unix based systems and the shell are one of the most powerful ways to use computers whether it is your laptop or a supercomputer. This course is an introduction to navigating your way around the shell and demonstrating how it can improve your workflow. This can be in the form of data processing, executing code, using a huge range of built-in tools, and creating pipelines.
 
-Insert description paragraph
 
 ## This course will cover:  
-
-- Bullet point learning objectives
+- Describe what the shell is and how do you access it
+- Navigate around the unix filesystem
+- Inspect and manipulate files
+- Automate tasks via scripts
+- Run programmes outside of IDEs and notebooks
 
 ## Pre-requisite knowledge
-
-Specify as either essential or preferable, and try to relate to courses we provide and their learning objectives.
+- No pre-requisite knowledge. The attendees will require access to Unix-like system. There are number of options here: MacOS, WSL2 on Windows, Linux, HPC (ISCA).
 
 ## Workshop Format
-
-This a hybrid workshop run over XX sessions. The [schedule can be found here](https://uniexeterrse.github.io/UoE-workshop-template/schedule.html). 
+More details to follow here.
 
 ## Upcoming course dates
 
@@ -50,6 +51,6 @@ If you are interested in becoming part of our community of workshop helpers, lea
 
 ## Acknowledgements
 
-This course was adapted from XXX and has been developed by the University of Exeter Research Software Engineering Group and [a team of generous volunteers](https://uniexeterrse.github.io/UoE-workshop-template/acknowledgements.html) who are anthuastic about sharing their skills with the wider research community. It;s provision is dependent on the time of these volunteers. If you have benefited in any way from this course and want to support it's long term sustainablity then please take the time to complete our feedback survey, recommend it to your collegues, and enthuse about it to your senior leadership team. 
+This course was adapted from Software Capentries Intro to Unix Shell and has been developed by the University of Exeter Research Software Engineering Group who are anthuastic about sharing their skills with the wider research community. Its provision is dependent on the time of these volunteers. If you have benefited in any way from this course and want to support it's long term sustainablity then please take the time to complete our feedback survey, recommend it to your collegues, and enthuse about it to your senior leadership team. 
 
 This workshop is brought to you by the University of Exeter Research Software Engineering Group, [University of Exeter Institute of Data Science and Artificial Intelligence](https://www.exeter.ac.uk/research/idsai/), [University of Exeter Researcher Development](https://www.exeter.ac.uk/research/doctoralcollege/early-career-researchers/traininganddevelopment/rdprogramme/) and the [University of Exeter Doctoral College](https://www.exeter.ac.uk/research/doctoralcollege/).
