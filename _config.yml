@@ -2,7 +2,7 @@
 title: Introduction to Unix Shell 
 short_name: unix-shell
 developers: [Omar Jamil, Ricky Olivier]
-description: This course will introduce you to navigating the file system and carry out vasic operations on the Unix systems using the shell (also referred to as the command line)
+description: This course will introduce you to navigating the file system and carry out basic operations on the Unix systems using the shell (also referred to as the command line)
 n_sessions: 2
 prereq: Access to Unix-like system e.g. MacOS, Linux, WSL2, HPC 
 url: https://uniexeterrse.github.io/repo-name
