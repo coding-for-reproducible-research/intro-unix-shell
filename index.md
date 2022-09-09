@@ -43,7 +43,7 @@ On completion of these course you will be invited to join a network of other par
 
 ## Feedback
 
-Please remember to complete a feedback survey. Our workshops are under continual review and your experiences, suggestions and criticism are invaluable for shaping the diretcion of this initiative. This is especially important if you complete the materials in your own time as it enables us to measure impact. If you have ideas on other courses you would like to see then please contact Eilis Hannon e.j.hannon@exeter.ac.uk.
+Please remember to complete a feedback survey. Our workshops are under continual review and your experiences, suggestions and criticism are invaluable for shaping the direction of this initiative. This is especially important if you complete the materials in your own time as it enables us to measure impact. If you have ideas on other courses you would like to see then please contact Eilis Hannon e.j.hannon@exeter.ac.uk.
 
 ## Join us
 
@@ -51,6 +51,6 @@ If you are interested in becoming part of our community of workshop helpers, lea
 
 ## Acknowledgements
 
-This course was adapted from Software Capentries Intro to Unix Shell and has been developed by the University of Exeter Research Software Engineering Group who are anthuastic about sharing their skills with the wider research community. Its provision is dependent on the time of these volunteers. If you have benefited in any way from this course and want to support it's long term sustainablity then please take the time to complete our feedback survey, recommend it to your collegues, and enthuse about it to your senior leadership team. 
+This course was adapted from Software Carpentries Intro to Unix Shell and has been developed by the University of Exeter Research Software Engineering Group who are enthusiastic about sharing their skills with the wider research community. Its provision is dependent on the time of these volunteers. If you have benefited in any way from this course and want to support its long term sustainability then please take the time to complete our feedback survey, recommend it to your colleagues, and enthuse about it to your senior leadership team. 
 
 This workshop is brought to you by the University of Exeter Research Software Engineering Group, [University of Exeter Institute of Data Science and Artificial Intelligence](https://www.exeter.ac.uk/research/idsai/), [University of Exeter Researcher Development](https://www.exeter.ac.uk/research/doctoralcollege/early-career-researchers/traininganddevelopment/rdprogramme/) and the [University of Exeter Doctoral College](https://www.exeter.ac.uk/research/doctoralcollege/).
