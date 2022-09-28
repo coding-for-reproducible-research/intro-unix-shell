@@ -727,4 +727,3 @@ without thinking about them.'
 {: .challenge}
 
 
-{% include links.md %}

@@ -971,4 +971,3 @@ or specifying a naming pattern using wildcards.
 > {: .solution}
 {: .challenge}
 
-{% include links.md %}
