@@ -716,4 +716,3 @@ so instead, she'll have to be careful later on to select files using the wildcar
 > {: .solution}
 {: .challenge}
 
-{% include links.md %}

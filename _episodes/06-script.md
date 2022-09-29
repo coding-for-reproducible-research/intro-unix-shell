@@ -647,4 +647,3 @@ Of course, this introduces another tradeoff between flexibility and complexity.
 > {: .solution}
 {: .challenge}
 
-{% include links.md %}
