@@ -23,7 +23,8 @@ which gives you access to both Bash shell commands and Git.
 Once installed, you can open a terminal by running the program Git Bash from the Windows start
 menu.
 
-For advanced users, as an alternative, to Git for Windows you may wish to [Install the Windows Subsystem for Linux][wsl] which gives access to a Bash shell command-line tool in Windows 10.
+** For advanced users **
+As an alternative to Git for Windows you may wish to [Install the Windows Subsystem for Linux][wsl] which gives access to a Bash shell command-line tool in Windows 10.
 Please note that commands in the Windows Subsystem for Linux (WSL) may differ slightly
 from those shown in the lesson or presented in the workshop.
 
@@ -62,21 +63,6 @@ After installing the software
    This step will make sure you start with your home folder as your working directory.
 
 In the lesson, you will find out how to access the data files in this folder.
-
-> ## Where to type commands: How to open a new shell
->
-> The shell is a program that enables us to send commands to the computer and receive output.
-> It is also referred to as the terminal or command line.
->
-> Some computers include a default Unix Shell program.
-> The steps below describe some methods for identifying and opening
-> a Unix Shell program if you already have one installed.
-> There are also options for identifying and downloading a Unix Shell program,
-> a Linux/UNIX emulator, or a program to access a Unix Shell on a server.
->
-> If none of the options below address your circumstances,
-> try an online search for: Unix shell [your computer model] [your operating system].
-
 
 [zip-file]: {{ page.root }}/data/shell-lesson-data.zip
 [wsl]: https://docs.microsoft.com/en-us/windows/wsl/install-win10
