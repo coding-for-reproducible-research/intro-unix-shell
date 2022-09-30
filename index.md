@@ -25,17 +25,18 @@ More details to follow here.
 
 | Dates | Time  | Venue | Sign up link |
 |--- |--- |--- | --- |
-| TBC |  | | |
+| Session 1: 7th October 2022 | 10 am - 1 pm | Streatham: Old Library Training Room 4  | [Registration form can be located here](https://www.exeter.ac.uk/staff/development/coursedetail/?code=80280) |
+| Session 2: 14th October 2022 | 10 am - 1 pm | Streatham: Old Library Training Room 4  | [Registration form can be located here](https://www.exeter.ac.uk/staff/development/coursedetail/?code=80280) |
 
 Registration for this course is handled by [University of Exeter Researcher Development](https://www.exeter.ac.uk/research/doctoralcollege/early-career-researchers/traininganddevelopment/rdprogramme/)
 
 ## Set-up instructions for attendees
 
-If you have registered for this course you can find the [instructions for setting up your computer here.](https://uniexeterrse.github.io/workshop-template-test/setup.html) 
+If you have registered for this course you can find the [instructions for setting up your computer here.](https://uniexeterrse.github.io/intro-unix-shell/setup.html) 
 
 ## Start course
 
-If you are unable to attend any of the dates above the [notes for this course are available here](https://uniexeterrse.github.io/workshop-template-test/contents.html) and are freely available to work through in your own time. Please note that you will need to have completed the set up instructions above.
+If you are unable to attend any of the dates above the [notes for this course are available here](https://uniexeterrse.github.io/intro-unix-shell/contents.html) and are freely available to work through in your own time. Please note that you will need to have completed the set up instructions above.
 
 ## Follow up courses
 
