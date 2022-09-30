@@ -1,4 +1,5 @@
 ---
+layout: page
 title: "Navigating Files and Directories"
 teaching: 30
 exercises: 10
