@@ -1,22 +1,26 @@
 ---
+layout: page
 title: "Shell Scripts"
-teaching: 30
-exercises: 15
-questions:
+toc: true
+order: 7
+--- 
+
+## Questions
 - "How can I save and re-use commands?"
-objectives:
+
+## Objectives
 - "Write a shell script that runs a command or series of commands for a fixed set of files."
 - "Run a shell script from the command line."
 - "Write a shell script that operates on a set of files defined by the user on the command line."
 - "Create pipelines that include shell scripts you, and others, have written."
-keypoints:
+
+## Keypoints
 - "Save commands in files (usually called shell scripts) for re-use."
 - "`bash [filename]` runs the commands saved in a file."
 - "`$@` refers to all of a shell script's command-line arguments."
 - "`$1`, `$2`, etc., refer to the first command-line argument, the second command-line argument, etc."
 - "Place variables in quotes if the values might have spaces in them."
 - "Letting users decide what files to process is more flexible and more consistent with built-in Unix commands."
----
 
 We are finally ready to see what makes the shell such a powerful programming environment.
 We are going to take the commands we repeat frequently and save them in files

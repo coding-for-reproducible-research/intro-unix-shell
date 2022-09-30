@@ -1,15 +1,20 @@
 ---
+layout: page
 title: "Working With Files and Directories"
-teaching: 30
-exercises: 20
-questions:
+toc: true
+order: 4
+---
+
+## Questions
 - "How can I create, copy, and delete files and directories?"
 - "How can I edit files?"
-objectives:
+
+## Objectives
 - "Create a directory hierarchy that matches a given diagram."
 - "Create files in that hierarchy using an editor or by copying and renaming existing files."
 - "Delete, copy and move specified files and/or directories."
-keypoints:
+
+## Keypoints
 - "`cp [old] [new]` copies a file."
 - "`mkdir [path]` creates a new directory."
 - "`mv [old] [new]` moves (renames) a file or directory."
@@ -20,7 +25,7 @@ keypoints:
 - "The shell does not have a trash bin: once something is deleted, it's really gone."
 - "Most files' names are `something.extension`. The extension isn't required, and doesn't guarantee anything, but is normally used to indicate the type of data in the file."
 - "Depending on the type of work you do, you may need a more powerful text editor than Nano."
----
+
 ## Creating directories
 We now know how to explore files and directories,
 but how do we create them in the first place?

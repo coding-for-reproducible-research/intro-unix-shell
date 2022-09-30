@@ -1,17 +1,22 @@
 ---
+layout: page
 title: "Loops"
-teaching: 40
-exercises: 10
-questions:
+toc: true
+order: 6
+---
+
+## Questions
 - "How can I perform the same actions on many different files?"
-objectives:
+
+## Objectives
 - "Write a loop that applies one or more commands separately to each file in a set of files."
 - "Trace the values taken on by a loop variable during execution of the loop."
 - "Explain the difference between a variable's name and its value."
 - "Explain why spaces and some punctuation characters shouldn't be used in file names."
 - "Demonstrate how to see what commands have recently been executed."
 - "Re-run recently executed commands without retyping them."
-keypoints:
+
+## Keypoints
 - "A `for` loop repeats commands once for every thing in a list."
 - "Every `for` loop needs a variable to refer to the thing it is currently operating on."
 - "Use `$name` to expand a variable (i.e., get its value). `${name}` can also be used."
@@ -20,7 +25,6 @@ keypoints:
 - "Use the up-arrow key to scroll up through previous commands to edit and repeat them."
 - "Use <kbd>Ctrl</kbd>+<kbd>R</kbd> to search through the previously entered commands."
 - "Use `history` to display recent commands, and `![number]` to repeat a command by number."
----
 
 **Loops** are a programming construct which allow us to repeat a command or set of commands
 for each item in a list.

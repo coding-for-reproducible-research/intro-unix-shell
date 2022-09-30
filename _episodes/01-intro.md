@@ -1,13 +1,18 @@
 ---
+layout: page 
 title: "Introducing the Shell"
-teaching: 5
-exercises: 0
-questions:
+toc: true
+order: 2
+---
+
+### Questions
 - "What is a command shell and why would I use one?"
-objectives:
+
+## Objectives
 - "Explain how the shell relates to the keyboard, the screen, the operating system, and users' programs."
 - "Explain when and why command-line interfaces should be used instead of graphical interfaces."
-keypoints:
+
+### Keypoints
 - "A shell is a program whose primary purpose is to read commands and run other programs."
 -  "This lesson uses Bash, the default shell in many implementations of Unix."
 -  "Programs can be run in Bash by entering commands at the command-line prompt."
@@ -15,7 +20,7 @@ keypoints:
 automating repetitive tasks, and its capacity to access networked machines."
 - "The shell's main disadvantages are its primarily textual nature and how
 cryptic its commands and operation can be."
----
+
 ### Background
 
 Humans and computers commonly interact in many different ways, such as through a keyboard and mouse,

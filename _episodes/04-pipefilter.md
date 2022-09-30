@@ -1,15 +1,20 @@
 ---
+layout: page
 title: "Pipes and Filters"
-teaching: 25
-exercises: 10
-questions:
+toc: true
+order: 5
+---
+
+## Questions
 - "How can I combine existing commands to do new things?"
-objectives:
+
+## Objectives
 - "Redirect a command's output to a file."
 - "Construct command pipelines with two or more stages."
 - "Explain what usually happens if a program or pipeline isn't given any input to process."
 - "Explain the advantage of linking commands with pipes and filters."
-keypoints:
+
+## Keypoints
 - "`wc` counts lines, words, and characters in its inputs."
 - "`cat` displays the contents of its inputs."
 - "`sort` sorts its inputs."
@@ -19,7 +24,6 @@ keypoints:
 - "`command >> [file]` appends a command's output to a file."
 - "`[first] | [second]` is a pipeline: the output of the first command is used as the input to the second."
 - "The best way to use the shell is to use pipes to combine simple single-purpose programs (filters)."
----
 
 Now that we know a few basic commands,
 we can finally look at the shell's most powerful feature:
@@ -58,6 +62,7 @@ it counts the number of lines, words, and characters in files (from left to righ
 
 If we run the command `wc *.pdb`, the `*` in `*.pdb` matches zero or more characters,
 so the shell turns `*.pdb` into a list of all `.pdb` files in the current directory:
+
 
 ~~~
 $ wc *.pdb

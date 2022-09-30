@@ -1,22 +1,26 @@
 ---
+layout: page
 title: "Finding Things"
-teaching: 25
-exercises: 20
-questions:
+toc: true
+order: 8
+---
+
+## Questions
 - "How can I find files?"
 - "How can I find things in files?"
-objectives:
+
+## Objectives
 - "Use `grep` to select lines from text files that match simple patterns."
 - "Use `find` to find files and directories whose names match simple patterns."
 - "Use the output of one command as the command-line argument(s) to another command."
 - "Explain what is meant by 'text' and 'binary' files, and why many common tools don't handle the latter well."
-keypoints:
+
+## Keypoints
 - "`find` finds files with specific properties that match patterns."
 - "`grep` selects lines in files that match patterns."
 - "`--help` is an option supported by many bash commands, and programs that can be run from within Bash, to display more information on how to use these commands or programs."
 - "`man [command]` displays the manual page for a given command."
 - "`$([command])` inserts a command's output in place."
----
 
 In the same way that many of us now use 'Google' as a
 verb meaning 'to find', Unix programmers often use the

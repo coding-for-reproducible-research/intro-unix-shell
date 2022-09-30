@@ -10,5 +10,5 @@ This course will be a hands-on training workshop. The relevant course documentat
 <!-- The material for this workshop is structured in the following lessons which may be covered across multiple sessions. Use the links below to navigate to the correct episode. -->
 
 <!-- Commenting out line below -->
-<!-- <ol> {% include toc.html %} </ol> -->
+<ol> {% include toc.html %} </ol>
 

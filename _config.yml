@@ -24,7 +24,7 @@ defaults:
       type: episodes
     values:
       root: ..
-      layout: episode
+      layout: page
   - scope:
       path: ""
       type: extras
