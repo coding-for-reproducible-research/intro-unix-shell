@@ -88,7 +88,7 @@ which will be constructed in a similar way, but not be exactly identical.
 
 On Nelle's computer, the filesystem looks like this:
 
-![The file system is made up of a root directory that contains sub-directories
+[The file system is made up of a root directory that contains sub-directories
 titled bin, data, users, and tmp](../fig/filesystem.svg)
 
 At the top is the **root directory**
