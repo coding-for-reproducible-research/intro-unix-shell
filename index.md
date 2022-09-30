@@ -25,8 +25,8 @@ More details to follow here.
 
 | Dates | Time  | Venue | Sign up link |
 |--- |--- |--- | --- |
-| Session 1: 7th October 2022 | 10 am - 1 pm | Streatham: Old Library Training Room 4  | [Registration form can be located here](https://www.exeter.ac.uk/staff/development/coursedetail/?code=80280) |
-| Session 2: 14th October 2022 | 10 am - 1 pm | Streatham: Old Library Training Room 4  | [Registration form can be located here](https://www.exeter.ac.uk/staff/development/coursedetail/?code=80280) |
+| Session 1: 7th October 2022 | 10 am - 1 pm | Streatham: Old Library Training Room 4  | [Registration form]( https://forms.office.com/r/iYb6xV0g6h) |
+| Session 2: 14th October 2022 | 10 am - 1 pm | Streatham: Old Library Training Room 4  | [Registration form]( https://forms.office.com/r/iYb6xV0g6h) |
 
 Registration for this course is handled by [University of Exeter Researcher Development](https://www.exeter.ac.uk/research/doctoralcollege/early-career-researchers/traininganddevelopment/rdprogramme/)
 
