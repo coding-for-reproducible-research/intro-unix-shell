@@ -57,7 +57,8 @@ you can run it by opening a terminal and typing `bash`.
 ## Open a new shell
 After installing the software
 3. Open a terminal.
-   If you're not sure how to open a terminal on your operating system, see the instructions below.
+   If you're not sure how to open a terminal on your operating system, see the instructions under
+   **Install Software** above.
 4. In the terminal type `cd` then press the <kbd>Return</kbd> key.
    This step will make sure you start with your home folder as your working directory.
 
