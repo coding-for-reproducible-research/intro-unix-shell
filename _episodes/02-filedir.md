@@ -121,7 +121,7 @@ Underneath `/Users`,
 we find one directory for each user with an account on Nelle's machine,
 her colleagues *imhotep* and *larry*.
 
-![Like other directories, home directories are sub-directories underneath
+[Like other directories, home directories are sub-directories underneath
 "/Users" like "/Users/imhotep", "/Users/larry" or
 "/Users/nelle"](../fig/home-directories.svg)
 
@@ -673,7 +673,7 @@ Run `pwd` and `ls -F` to ensure that we're in the directory we expect.
 > 3.  `2012-12-01/ 2013-01-08/ 2013-01-27/`
 > 4.  `original/ pnas_final/ pnas_sub/`
 >
-> ![A directory tree below the Users directory where "/Users" contains the
+> [A directory tree below the Users directory where "/Users" contains the
 directories "backup" and "thing"; "/Users/backup" contains "original",
 "pnas_final" and "pnas_sub"; "/Users/thing" contains "backup"; and
 "/Users/thing/backup" contains "2012-12-01", "2013-01-08" and
@@ -700,7 +700,7 @@ directories "backup" and "thing"; "/Users/backup" contains "original",
 > ~~~
 > {: .output}
 >
-> ![A directory tree below the Users directory where "/Users" contains the
+> [A directory tree below the Users directory where "/Users" contains the
 directories "backup" and "thing"; "/Users/backup" contains "original",
 "pnas_final" and "pnas_sub"; "/Users/thing" contains "backup"; and
 "/Users/thing/backup" contains "2012-12-01", "2013-01-08" and
@@ -731,7 +731,7 @@ $ ls -F /
 ~~~
 {: .language-bash}
 
-![General syntax of a shell command](../fig/shell_command_syntax.svg)
+[General syntax of a shell command](../fig/shell_command_syntax.svg)
 
 `ls` is the **command**, with an **option** `-F` and an
 **argument** `/`.

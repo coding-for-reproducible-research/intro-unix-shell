@@ -443,7 +443,7 @@ the calculation is 'head of sort of line count of `*.pdb`'.
 
 The redirection and pipes used in the last few commands are illustrated below:
 
-![Redirects and Pipes of different commands: "wc -l *.pdb" will direct the
+[Redirects and Pipes of different commands: "wc -l *.pdb" will direct the
 output to the shell. "wc -l *.pdb > lengths" will direct output to the file
 "lengths". "wc -l *.pdb | sort -n | head -n 1" will build a pipeline where the
 output of the "wc" command is the input to the "sort" command, the output of
