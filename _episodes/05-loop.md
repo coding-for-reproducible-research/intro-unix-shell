@@ -174,6 +174,9 @@ or a subset of data.
 >
 > How would you write a loop that echoes all 10 numbers from 0 to 9?
 >
+> <details>
+> <summary>Click me for solution</summary>
+>
 > > ## Solution
 > >
 > > ~~~
@@ -198,6 +201,7 @@ or a subset of data.
 > > ```
 > > {: .output}
 > {: .solution}
+> </details>
 {: .challenge}
 
 > ## Variables in Loops
@@ -231,6 +235,9 @@ or a subset of data.
 > {: .language-bash}
 >
 > Why do these two loops give different outputs?
+>
+> <details>
+> <summary>Click me for solution</summary>
 >
 > > ## Solution
 > > The first code block gives the same output on each iteration through
@@ -271,6 +278,7 @@ or a subset of data.
 > > ```
 > > {: .output}
 > {: .solution}
+> </details>
 {: .challenge}
 
 > ## Limiting Sets of Files
@@ -291,10 +299,14 @@ or a subset of data.
 > 3.  Only `cubane.pdb`, `octane.pdb` and `pentane.pdb` are listed.
 > 4.  Only `cubane.pdb` is listed.
 >
+> <details>
+> <summary>Click me for solution</summary>
+>
 > > ## Solution
 > > 4 is the correct answer. `*` matches zero or more characters, so any file name starting with
 > > the letter c, followed by zero or more other characters will be matched.
 > {: .solution}
+> </details>
 >
 > How would the output differ from using this command instead?
 >
@@ -312,10 +324,14 @@ or a subset of data.
 > 4.  The files `cubane.pdb` and `octane.pdb` will be listed.
 > 5.  Only the file `octane.pdb` will be listed.
 >
+> <details>
+> <summary>Click me for solution</summary>
+>
 > > ## Solution
 > > 4 is the correct answer. `*` matches zero or more characters, so a file name with zero or more
 > > characters before a letter c and zero or more characters after the letter c will be matched.
 > {: .solution}
+> </details>
 {: .challenge}
 
 > ## Saving to a File in a Loop - Part One
@@ -339,12 +355,16 @@ or a subset of data.
 >     and the text from `propane.pdb` will be saved to a file called `alkanes.pdb`.
 > 4.  None of the above.
 >
+> <details>
+> <summary>Click me for solution</summary>
+>
 > > ## Solution
 > > 1. The text from each file in turn gets written to the `alkanes.pdb` file.
 > > However, the file gets overwritten on each loop iteration, so the final content of
 > > `alkanes.pdb`
 > > is the text from the `propane.pdb` file.
 > {: .solution}
+> </details>
 {: .challenge}
 
 > ## Saving to a File in a Loop - Part Two
@@ -368,11 +388,15 @@ or a subset of data.
 > 4.  All of the text from `cubane.pdb`, `ethane.pdb`, `methane.pdb`, `octane.pdb`, `pentane.pdb`
 >     and `propane.pdb` would be printed to the screen and saved to a file called `all.pdb`.
 >
+> <details>
+> <summary>Click me for solution</summary>
+>
 > > ## Solution
 > > 3 is the correct answer. `>>` appends to a file, rather than overwriting it with the redirected
 > > output from a command.
 > > Given the output from the `cat` command has been redirected, nothing is printed to the screen.
 > {: .solution}
+> </details>
 {: .challenge}
 
 Let's continue with our example in the `shell-lesson-data/exercise-data/creatures` directory.
@@ -765,6 +789,9 @@ so she decides to get some coffee and catch up on her reading.
 > ~~~
 > {: .language-bash}
 >
+> <details>
+> <summary>Click me for solution</summary>
+>
 > > ## Solution
 > > The second version is the one we want to run.
 > > This prints to screen everything enclosed in the quote marks, expanding the
@@ -780,6 +807,7 @@ so she decides to get some coffee and catch up on her reading.
 > > Try both versions for yourself to see the output! Be sure to open the
 > > `all.pdb` file to view its contents.
 > {: .solution}
+> </details>
 {: .challenge}
 
 > ## Nested Loops
@@ -800,6 +828,9 @@ so she decides to get some coffee and catch up on her reading.
 > ~~~
 > {: .language-bash}
 >
+> <details>
+> <summary>Click me for solution</summary>
+>
 > > ## Solution
 > > We have a nested loop, i.e. contained within another loop, so for each species
 > > in the outer loop, the inner loop (the nested loop) iterates over the list of
@@ -807,5 +838,6 @@ so she decides to get some coffee and catch up on her reading.
 > >
 > > Try running the code for yourself to see which directories are created!
 > {: .solution}
+> </details>
 {: .challenge}
 

@@ -276,10 +276,14 @@ Miscellaneous:
 > 3. `grep -w "of" haiku.txt`
 > 4. `grep -i "of" haiku.txt`
 >
+> <details>
+> <summary>Click me for solution</summary>
+>
 > > ## Solution
 > > The correct answer is 3, because the `-w` option looks only for whole-word matches.
 > > The other options will also match 'of' when part of another word.
 > {: .solution}
+> </details>
 {: .challenge}
 
 > ## Wildcards
@@ -361,6 +365,9 @@ Miscellaneous:
 > An example of such a file is provided in
 > `shell-lesson-data/exercise-data/animal-counts/animals.csv`
 >
+> <details>
+> <summary>Click me for solution</summary>
+>
 > > ## Solution
 > >
 > > ```
@@ -379,6 +386,7 @@ Miscellaneous:
 > > ```
 > > {: .language-bash}
 > {: .solution}
+> </details>
 {: .challenge}
 
 > ## Little Women
@@ -398,6 +406,9 @@ Miscellaneous:
 > There is often more than one way to solve a programming task, so a
 > particular solution is usually chosen based on a combination of
 > yielding the correct result, elegance, readability, and speed.
+>
+> <details>
+> <summary>Click me for solution</summary>
 >
 > > ## Solutions
 > > ```
@@ -429,6 +440,7 @@ Miscellaneous:
 > > (though in this case, it doesn't affect the answer to which sister is mentioned
 > > most frequently).
 > {: .solution}
+> </details>
 {: .challenge}
 
 While `grep` finds lines in files,
@@ -667,6 +679,9 @@ $ grep "searching" $(find . -name "*.txt")
 > 3.  `grep -v "unicorn" $(find creatures -name "*.dat")`
 > 4.  None of the above.
 >
+> <details>
+> <summary>Click me for solution</summary>
+>
 > > ## Solution
 > > Option 1. is correct. Putting the match expression in quotes prevents the shell
 > > expanding it, so it gets passed to the `find` command.
@@ -680,6 +695,7 @@ $ grep "searching" $(find . -name "*.txt")
 > > Option 3 is incorrect because it searches the contents of the files for lines which
 > > do not match 'unicorn', rather than searching the file names.
 > {: .solution}
+> </details>
 {: .challenge}
 
 > ## Binary Files
@@ -723,11 +739,15 @@ without thinking about them.'
 > ~~~
 > {: .language-bash}
 >
+> <details>
+> <summary>Click me for solution</summary>
+>
 > > ## Solution
 > > 1. Find all files with a `.dat` extension recursively from the current directory
 > > 2. Count the number of lines each of these files contains
 > > 3. Sort the output from step 2. numerically
 > {: .solution}
+> </details>
 {: .challenge}
 
 
