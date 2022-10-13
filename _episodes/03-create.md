@@ -259,9 +259,6 @@ draft.txt
 >
 > 3.  When might you want to create a file this way?
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > > 1.  The `touch` command generates a new file called `my_file.txt` in
 > >     your current directory.  You
@@ -280,7 +277,6 @@ draft.txt
 > >     efficiently generate a blank text file to be used by such
 > >     programs.
 > {: .solution}
-> </details>
 >
 > To avoid confusion later on,
 > we suggest removing the file you've just created before proceding with the rest
@@ -437,9 +433,6 @@ quotes.txt
 > ~~~
 > {: .language-bash}
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > > ```
 > > $ mv sucrose.dat maltose.dat ../raw
@@ -448,7 +441,6 @@ quotes.txt
 > > Recall that `..` refers to the parent directory (i.e. one above the current directory)
 > > and that `.` refers to the current directory.
 > {: .solution}
-> </details>
 {: .challenge}
 
 ## Copying files and directories
@@ -509,9 +501,6 @@ quotations.txt
 > 3. `mv statstics.txt .`
 > 4. `cp statstics.txt .`
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > > 1. No.  While this would create a file with the correct name,
 > > the incorrectly named file still exists in the directory
@@ -523,7 +512,6 @@ quotations.txt
 > > 4. No, the period(.) indicates where to copy the file, but does not provide a new file name;
 > > identical file names cannot be created.
 > {: .solution}
-> </details>
 {: .challenge}
 
 > ## Moving and Copying
@@ -560,9 +548,6 @@ quotations.txt
 > 3.   `proteins.dat recombined`
 > 4.   `proteins-saved.dat`
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > > We start in the `/Users/jamie/data` directory, and create a new folder called `recombined`.
 > > The second line moves (`mv`) the file `proteins.dat` to the new folder (`recombined`).
@@ -578,7 +563,6 @@ quotations.txt
 > > 3. No, see explanation above.  `proteins.dat` is located at `/Users/jamie/data/recombined`
 > > 4. No, see explanation above.  `proteins-saved.dat` is located at `/Users/jamie`
 > {: .solution}
-> </details>
 {: .challenge}
 
 ## Removing files and directories
@@ -621,9 +605,6 @@ ls: cannot access 'quotes.txt': No such file or directory
 > What happens when we execute `rm -i thesis_backup/quotations.txt`?
 > Why would we want this protection when using `rm`?
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > > ```
 > > rm: remove regular file 'thesis_backup/quotations.txt'? y
@@ -635,7 +616,6 @@ ls: cannot access 'quotes.txt': No such file or directory
 > > By using the `-i` option, we have the chance to check that we are deleting only the files
 > > that we want to remove.
 > {: .solution}
-> </details>
 {: .challenge}
 
 
@@ -700,9 +680,6 @@ or specifying a naming pattern using wildcards.
 > ~~~
 > {: .language-bash}
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > > If given more than one file name followed by a directory name
 > > (i.e. the destination directory must be the last argument),
@@ -716,7 +693,6 @@ or specifying a naming pattern using wildcards.
 > > ```
 > > {: .error}
 > {: .solution}
-> </details>
 {: .challenge}
 
 ### Using wildcards for accessing multiple files at once
@@ -763,9 +739,6 @@ or specifying a naming pattern using wildcards.
 > 3. `ls *t??ne.pdb`
 > 4. `ls ethane.*`
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 >>  The solution is `3.`
 >>
@@ -785,7 +758,6 @@ or specifying a naming pattern using wildcards.
 >>
 >> `4.` only shows files starting with `ethane.`.
 > {: .solution}
-> </details>
 {: .challenge}
 
 > ## More on Wildcards
@@ -876,9 +848,6 @@ or specifying a naming pattern using wildcards.
 > ```
 > {: .language-bash}
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > > ```
 > > $ cp *calibration.txt backup/calibration
@@ -887,7 +856,6 @@ or specifying a naming pattern using wildcards.
 > > ```
 > > {: .language-bash}
 > {: .solution}
-> </details>
 {: .challenge}
 
 > ## Organizing Directories and Files
@@ -925,9 +893,6 @@ or specifying a naming pattern using wildcards.
 > ~~~
 > {: .output}
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > > ```
 > > mv *.dat analyzed
@@ -937,7 +902,6 @@ or specifying a naming pattern using wildcards.
 > > The shell will expand *.dat to match all .dat files in the current directory.
 > > The `mv` command then moves the list of .dat files to the 'analyzed' directory.
 > {: .solution}
-> </details>
 {: .challenge}
 
 > ## Reproduce a folder structure
@@ -995,9 +959,6 @@ or specifying a naming pattern using wildcards.
 > ~~~
 > {: .language-bash}
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > > The first two sets of commands achieve this objective.
 > > The first set uses relative paths to create the top-level directory before
@@ -1014,6 +975,5 @@ or specifying a naming pattern using wildcards.
 > > The final set of commands generates the 'raw' and 'processed' directories at the same level
 > > as the 'data' directory.
 > {: .solution}
-> </details>
 {: .challenge}
 

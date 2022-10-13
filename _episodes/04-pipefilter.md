@@ -234,12 +234,8 @@ But first we'll use an exercise to learn a little about the sort command:
 >
 > Explain why `-n` has this effect.
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > > The `-n` option specifies a numerical rather than an alphanumerical sort.
-> </details>
 > {: .solution}
 {: .challenge}
 
@@ -337,9 +333,6 @@ the output of `head` must be the file with the fewest lines.
 >
 > Hint: Try executing each command twice in a row and then examining the output files.
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > > In the first example with `>`, the string 'hello' is written to `testfile01.txt`,
 > > but the file gets overwritten each time we run the command.
@@ -349,7 +342,6 @@ the output of `head` must be the file with the fewest lines.
 > > but appends the string to the file if it already exists
 > > (i.e. when we run it for the second time).
 > {: .solution}
-> </details>
 {: .challenge}
 
 > ## Appending Data
@@ -372,9 +364,6 @@ the output of `head` must be the file with the fewest lines.
 > 3. The first three lines and the last two lines of `animals.csv`
 > 4. The second and third lines of `animals.csv`
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > > Option 3 is correct.
 > > For option 1 to be correct we would only run the `head` command.
@@ -382,7 +371,6 @@ the output of `head` must be the file with the fewest lines.
 > > For option 4 to be correct we would have to pipe the output of `head` into `tail -n 2`
 > >  by doing `head -n 3 animals.csv | tail -n 2 > animals-subset.csv`
 > {: .solution}
-> </details>
 {: .challenge}
 
 
@@ -472,9 +460,6 @@ the "sort" command is the input to the "head" command and the output of the
 > 3. `wc -l * | head -n 3 | sort -n`
 > 4. `wc -l * | sort -n | head -n 3`
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > > Option 4 is the solution.
 > > The pipe character `|` is used to connect the output from one command to
@@ -482,7 +467,6 @@ the "sort" command is the input to the "head" command and the output of the
 > > `>` is used to redirect standard output to a file.
 > > Try it in the `shell-lesson-data/exercise-data/proteins` directory!
 > {: .solution}
-> </details>
 {: .challenge}
 
 
@@ -534,9 +518,6 @@ so that you and other people can put those programs into pipes to multiply their
 > {: .language-bash}
 > Hint: build the pipeline up one command at a time to test your understanding
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > > The `head` command extracts the first 5 lines from `animals.csv`.
 > > Then, the last 3 lines are extracted from the previous 5 by using the `tail` command.
@@ -551,7 +532,6 @@ so that you and other people can put those programs into pipes to multiply their
 > > ```
 > > {: .source}
 > {: .solution}
-> </details>
 {: .challenge}
 
 > ## Pipe Construction
@@ -587,16 +567,12 @@ so that you and other people can put those programs into pipes to multiply their
 > out what animals the file contains (without any duplicates in their
 > names)?
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > > ```
 > > $ cut -d , -f 2 animals.csv | sort | uniq
 > > ```
 > > {: .language-bash}
 > {: .solution}
-> </details>
 {: .challenge}
 
 > ## Which Pipe?
@@ -624,18 +600,12 @@ so that you and other people can put those programs into pipes to multiply their
 > 4.  `cut -d, -f 2 animals.csv | sort | uniq -c`
 > 5.  `cut -d, -f 2 animals.csv | sort | uniq -c | wc -l`
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > > Option 4. is the correct answer.
 > > If you have difficulty understanding why, try running the commands, or sub-sections of
 > > the pipelines (make sure you are in the `shell-lesson-data/exercise-data/animal-counts` 
 > > directory).
 > {: .solution}
-> </details>
-
-</details>
 {: .challenge}
 
 ## Nelle's Pipeline: Checking Files
@@ -741,9 +711,6 @@ so instead, she'll have to be careful later on to select files using the wildcar
 > 3. `rm * .txt`
 > 4. `rm *.*`
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > > 1. This would remove `.txt` files with one-character names
 > > 2. This is the correct answer
@@ -753,7 +720,5 @@ so instead, she'll have to be careful later on to select files using the wildcar
 > > 4. The shell would expand `*.*` to match all files with any extension,
 > > so this command would delete all files
 > {: .solution}
->
-> </details>
 {: .challenge}
 

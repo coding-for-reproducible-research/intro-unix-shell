@@ -327,15 +327,11 @@ To **quit** the `man` pages, press <kbd>Q</kbd>.
 > Hint: You may need to use the `-l` option to see the
 > last changed dates.
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > > The most recently changed file is listed last when using `-rt`. This
 > > can be very useful for finding your most recent edits or checking to
 > > see if a new output file was written.
 > {: .solution}
-> </details>
 {: .challenge}
 
 ### Exploring Other Directories
@@ -657,9 +653,6 @@ Run `pwd` and `ls -F` to ensure that we're in the directory we expect.
 > 8. `cd`
 > 9. `cd ..`
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > > 1. No: `.` stands for the current directory.
 > > 2. No: `/` stands for the root directory.
@@ -672,7 +665,6 @@ Run `pwd` and `ls -F` to ensure that we're in the directory we expect.
 > > 8. Yes: shortcut to go back to the user's home directory.
 > > 9. Yes: goes up one level.
 > {: .solution}
-> </details>
 {: .challenge}
 
 > ## Relative Path Resolution
@@ -691,9 +683,6 @@ directories "backup" and "thing"; "/Users/backup" contains "original",
 "/Users/thing/backup" contains "2012-12-01", "2013-01-08" and
 "2013-01-27"](../fig/filesystem-challenge.svg)
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > > 1. No: there *is* a directory `backup` in `/Users`.
 > > 2. No: this is the content of `Users/thing/backup`,
@@ -701,7 +690,6 @@ directories "backup" and "thing"; "/Users/backup" contains "original",
 > > 3. No: see previous explanation.
 > > 4. Yes: `../backup/` refers to `/Users/backup/`.
 > {: .solution}
-> </details>
 {: .challenge}
 
 > ## `ls` Reading Comprehension
@@ -726,16 +714,12 @@ directories "backup" and "thing"; "/Users/backup" contains "original",
 > 2.  `ls -r -F`
 > 3.  `ls -r -F /Users/backup`
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > >  1. No: `pwd` is not the name of a directory.
 > >  2. Yes: `ls` without directory argument lists files and directories
 > >     in the current directory.
 > >  3. Yes: uses the absolute path explicitly.
 > {: .solution}
-> </details>
 {: .challenge}
 
 

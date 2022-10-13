@@ -319,9 +319,6 @@ $ bash sorted.sh *.pdb ../creatures/*.dat
 > filenames as command-line arguments, and uses a variation of the above command
 > to print a list of the unique species appearing in each of those files separately.
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > >
 > > ```
@@ -338,7 +335,6 @@ $ bash sorted.sh *.pdb ../creatures/*.dat
 > > ```
 > > {: .language-bash}
 > {: .solution}
-> </details>
 {: .challenge}
 
 
@@ -384,16 +380,12 @@ we have a completely accurate record of how we created that figure.
 > running it. In fact, the shell *always* adds commands to the log
 > before running them. Why do you think it does this?
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > > If a command causes something to crash or hang, it might be useful
 > > to know what that command was, in order to investigate the problem.
 > > Were the command only be recorded after running it, we would not
 > > have a record of the last command run in the event of a crash.
 > {: .solution}
-> </details>
 {: .challenge}
 
 In practice, most people develop shell scripts by running commands at the shell prompt a few times
@@ -504,9 +496,6 @@ Of course, this introduces another tradeoff between flexibility and complexity.
 > 3. The first and the last line of each file in the `proteins` directory
 > 4. An error because of the quotes around `*.pdb`
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > > The correct answer is 2.
 > >
@@ -522,7 +511,6 @@ Of course, this introduces another tradeoff between flexibility and complexity.
 > > As such, the first argument to the script is `'*.pdb'` which gets expanded within the
 > > script by `head` and `tail`.
 > {: .solution}
-> </details>
 {: .challenge}
 
 > ## Find the Longest File With a Given Extension
@@ -545,9 +533,6 @@ Of course, this introduces another tradeoff between flexibility and complexity.
 > $ bash longest.sh shell-lesson-data/exercise-data/writing txt
 > ~~~
 > {: .language-bash}
->
-> <details>
-> <summary>Click me for solution</summary>
 >
 > > ## Solution
 > >
@@ -573,7 +558,6 @@ Of course, this introduces another tradeoff between flexibility and complexity.
 > > the output.
 > >
 > {: .solution}
-> </details>
 {: .challenge}
 
 > ## Script Reading Comprehension
@@ -605,9 +589,6 @@ Of course, this introduces another tradeoff between flexibility and complexity.
 > ~~~
 > {: .language-bash}
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solutions
 > > In each case, the shell expands the wildcard in `*.pdb` before passing the resulting
 > > list of file names as arguments to the script.
@@ -626,7 +607,6 @@ Of course, this introduces another tradeoff between flexibility and complexity.
 > > ```
 > > {: .output}
 > {: .solution}
-> </details>
 {: .challenge}
 
 > ## Debugging Scripts
@@ -662,9 +642,6 @@ Of course, this introduces another tradeoff between flexibility and complexity.
 > What is the output showing you?
 > Which line is responsible for the error?
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > > The `-x` option causes `bash` to run in debug mode.
 > > This prints out each command as it is run, which will help you to locate errors.
@@ -672,6 +649,5 @@ Of course, this introduces another tradeoff between flexibility and complexity.
 > > in the loop variable name, and the variable `datfile` doesn't exist, hence returning
 > > an empty string.
 > {: .solution}
-> </details>
 {: .challenge}
 
