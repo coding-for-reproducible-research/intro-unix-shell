@@ -239,8 +239,8 @@ But first we'll use an exercise to learn a little about the sort command:
 >
 > > ## Solution
 > > The `-n` option specifies a numerical rather than an alphanumerical sort.
-> {: .solution}
 > </details>
+> {: .solution}
 {: .challenge}
 
 We will also use the `-n` option to specify that the sort is
