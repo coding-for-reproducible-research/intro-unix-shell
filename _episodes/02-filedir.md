@@ -38,7 +38,7 @@ which hold information,
 and directories (also called 'folders'),
 which hold files or other directories.
 
-Several commands are frequently used to create, inspect, rename, and delete files and directories.
+Several commands are frequently used to create, inspect, rename, modify, and delete files and directories.
 To start exploring them, we'll go to our open shell window.
 
 First, let's find out where we are by running a command called `pwd`
@@ -119,14 +119,14 @@ because its name begins with `/`.
 
 Underneath `/Users`,
 we find one directory for each user with an account on Nelle's machine,
-her colleagues *imhotep* and *larry*.
+her colleagues *Imhotep* and *Larry*.
 
 [Like other directories, home directories are sub-directories underneath
 "/Users" like "/Users/imhotep", "/Users/larry" or
 "/Users/nelle"](../fig/home-directories.svg)
 
-The user *imhotep*'s files are stored in `/Users/imhotep`,
-user *larry*'s in `/Users/larry`,
+The user *Imhotep*'s files are stored in `/Users/imhotep`,
+user *Larry*'s in `/Users/larry`,
 and Nelle's in `/Users/nelle`.  Because Nelle is the user in our
 examples here, therefore we get `/Users/nelle` as our home directory.
 Typically, when you open a new command prompt, you will be in
@@ -313,6 +313,8 @@ To **quit** the `man` pages, press <kbd>Q</kbd>.
 > > and the time of its last modification. If you use both the `-h` option and the `-l` option,
 > > this makes the file size '**h**uman readable', i.e. displaying something like `5.3K`
 > > instead of `5369`.
+> > This can either be passed in separately, as `ls -l -h`, or combined `ls -lh`, although you
+> > can't always rely on the combined form.
 > {: .solution}
 > </details>
 {: .challenge}
@@ -471,7 +473,7 @@ $ cd ..
 {: .language-bash}
 
 `..` is a special directory name meaning
-"the directory containing this one",
+"the directory containing the current directory",
 or more succinctly,
 the **parent** of the current directory.
 Sure enough,
@@ -741,7 +743,7 @@ $ ls -F /
 **argument** `/`.
 We've already encountered options  which
 either start with a single dash (`-`) or two dashes (`--`),
-and they change the behavior of a command.
+and they change the behaviour of a command.
 [Arguments] tell the command what to operate on (e.g. files and directories).
 Sometimes options and arguments are referred to as **parameters**.
 A command can be called with more than one option and more than one argument, but a
