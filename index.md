@@ -36,7 +36,7 @@ Registration for this course is handled by [University of Exeter Researcher Deve
 
 ## Set-up instructions for attendees
 
-If you have registered for this course you can find the [instructions for setting up your computer here.](https://uniexeterrse.github.io/intro-unix-shell/setup.html).
+If you have registered for this course you can find the [instructions for setting up your computer here](https://uniexeterrse.github.io/intro-unix-shell/setup.html).
 
 ## Start course
 
@@ -58,4 +58,4 @@ If you are interested in becoming part of our community of workshop helpers, lea
 
 This course was adapted from Software Carpentries Intro to Unix Shell and has been developed by the University of Exeter Research Software Engineering Group who are enthusiastic about sharing their skills with the wider research community. Its provision is dependent on the time of these volunteers. If you have benefited in any way from this course and want to support its long term sustainability then please take the time to complete our feedback survey, recommend it to your colleagues, and enthuse about it to your senior leadership team.
 
-This workshop is brought to you by the [University of Exeter Research Software Engineering Group](https://www.exeter.ac.uk/research/software-engineering/), [University of Exeter Institute of Data Science and Artificial Intelligence](https://www.exeter.ac.uk/research/idsai/), [University of Exeter Researcher Development](https://www.exeter.ac.uk/research/doctoralcollege/early-career-researchers/traininganddevelopment/rdprogramme/) and the [University of Exeter Doctoral College](https://www.exeter.ac.uk/research/doctoralcollege/).
+This workshop is brought to you by the University of Exeter [Research Software Engineering Group](https://www.exeter.ac.uk/research/software-engineering/), University of Exeter [Institute of Data Science and Artificial Intelligence](https://www.exeter.ac.uk/research/idsai/), University of Exeter [Researcher Development](https://www.exeter.ac.uk/research/doctoralcollege/early-career-researchers/traininganddevelopment/rdprogramme/) and the University of Exeter [Doctoral College](https://www.exeter.ac.uk/research/doctoralcollege/).
