@@ -6,15 +6,18 @@ order: 4
 ---
 
 ## Questions
+
 - "How can I create, copy, and delete files and directories?"
 - "How can I edit files?"
 
 ## Objectives
+
 - "Create a directory hierarchy that matches a given diagram."
 - "Create files in that hierarchy using an editor or by copying and renaming existing files."
 - "Delete, copy and move specified files and/or directories."
 
 ## Keypoints
+
 - "`cp [old] [new]` copies a file."
 - "`mkdir [path]` creates a new directory."
 - "`mv [old] [new]` moves (renames) a file or directory."
@@ -27,6 +30,7 @@ order: 4
 - "Depending on the type of work you do, you may need a more powerful text editor than Nano."
 
 ## Creating directories
+
 We now know how to explore files and directories,
 but how do we create them in the first place?
 
@@ -34,6 +38,7 @@ In this episode we will learn about creating and moving files and directories,
 using the `exercise-data/writing` directory as an example.
 
 ### Step one: see where we are and what we already have
+
 We should still be in the `shell-lesson-data` directory on the Desktop,
 which we can check using:
 
@@ -124,7 +129,8 @@ data/  results/
 ~~~
 {: .output}
 
-> ## Two ways of doing the same thing
+## Two ways of doing the same thing
+
 > Using the shell to create a directory is no different than using a file explorer.
 > If you open the current directory using your operating system's graphical file explorer,
 > the `thesis` directory will appear there too.
@@ -132,8 +138,8 @@ data/  results/
 > the files and directories themselves are the same.
 {: .callout}
 
-> ## Good names for files and directories
->
+## Good names for files and directories
+
 > Complicated names of files and directories can make your life painful
 > when working on the command line. Here we provide a few useful
 > tips for the names of your files and directories.
@@ -162,7 +168,8 @@ data/  results/
 > or other special characters, you should surround the name in quotes (`""`).
 {: .callout}
 
-### Create a text file
+## Create a text file
+
 Let's change our working directory to `thesis` using `cd`,
 then run a text editor called Nano to create a file called `draft.txt`:
 
@@ -172,8 +179,7 @@ $ nano draft.txt
 ~~~
 {: .language-bash}
 
-> ## Which Editor?
->
+## Which Editor?
 > When we say, '`nano` is a text editor' we really do mean 'text': it can
 > only work with plain character data, not tables, images, or any other
 > human-friendly media. We use it in examples because it is one of the
@@ -209,8 +215,7 @@ src="../fig/nano-screenshot.png"></div>
 Once our file is saved, we can use <kbd>Ctrl</kbd>+<kbd>X</kbd> to quit the editor and
 return to the shell.
 
-> ## Control, Ctrl, or ^ Key
->
+## Control, Ctrl, or ^ Key
 > The Control key is also called the 'Ctrl' key. There are various ways
 > in which using the Control key may be described. For example, you may
 > see an instruction to press the <kbd>Control</kbd> key and, while holding it down,
@@ -241,8 +246,8 @@ draft.txt
 ~~~
 {: .output}
 
-> ## Creating Files a Different Way
->
+## Creating Files a Different Way
+
 > We have seen how to create text files using the `nano` editor.
 > Now, try the following command:
 >
@@ -251,46 +256,47 @@ draft.txt
 > ~~~
 > {: .language-bash}
 >
-> 1.  What did the `touch` command do?
->     When you look at your current directory using the GUI file explorer,
->     does the file show up?
+> 1. What did the `touch` command do?
+>    When you look at your current directory using the GUI file explorer,
+>    does the file show up?
 >
-> 2.  Use `ls -l` to inspect the files.  How large is `my_file.txt`?
+> 2. Use `ls -l` to inspect the files.  How large is `my_file.txt`?
 >
-> 3.  When might you want to create a file this way?
+> 3. When might you want to create a file this way?
 >
 > > ## Solution
-> > 1.  The `touch` command generates a new file called `my_file.txt` in
-> >     your current directory.  You
-> >     can observe this newly generated file by typing `ls` at the
-> >     command line prompt.  `my_file.txt` can also be viewed in your
-> >     GUI file explorer.
 > >
-> > 2.  When you inspect the file with `ls -l`, note that the size of
-> >     `my_file.txt` is 0 bytes.  In other words, it contains no data.
-> >     If you open `my_file.txt` using your text editor it is blank.
+> > 1. The `touch` command generates a new file called `my_file.txt` in
+> >    your current directory.  You
+> >    can observe this newly generated file by typing `ls` at the
+> >    command line prompt.  `my_file.txt` can also be viewed in your
+> >    GUI file explorer.
 > >
-> > 3.  Some programs do not generate output files themselves, but
-> >     instead require that empty files have already been generated.
-> >     When the program is run, it searches for an existing file to
-> >     populate with its output.  The touch command allows you to
-> >     efficiently generate a blank text file to be used by such
-> >     programs.
+> > 2. When you inspect the file with `ls -l`, note that the size of
+> >    `my_file.txt` is 0 bytes.  In other words, it contains no data.
+> >    If you open `my_file.txt` using your text editor it is blank.
+> >
+> > 3. Some programs do not generate output files themselves, but
+> >    instead require that empty files have already been generated.
+> >    When the program is run, it searches for an existing file to
+> >    populate with its output.  The touch command allows you to
+> >    efficiently generate a blank text file to be used by such
+> >    programs.
 > {: .solution}
->
-> To avoid confusion later on,
-> we suggest removing the file you've just created before proceding with the rest
-> of the episode, otherwise future outputs may vary from those given in the lesson.
-> To do this, use the following command:
->
-> ~~~
-> $ rm my_file.txt
-> ~~~
-> {: .language-bash}
+
+To avoid confusion later on,
+we suggest removing the file you've just created before proceeding with the rest
+of the episode, otherwise future outputs may vary from those given in the lesson.
+To do this, use the following command:
+
+~~~
+$ rm my_file.txt
+~~~
+{: .language-bash}
 {: .challenge}
 
-> ## What's In A Name?
->
+## What's In A Name?
+
 > You may have noticed that all of Nelle's files are named 'something dot
 > something', and in this part of the lesson, we always used the extension
 > `.txt`.  This is just a convention: we can call a file `mythesis` or
@@ -314,6 +320,7 @@ draft.txt
 {: .callout}
 
 ## Moving files and directories
+
 Returning to the `shell-lesson-data/exercise-data/writing` directory,
 
 ```
@@ -410,8 +417,8 @@ quotes.txt
 ~~~
 {: .output}
 
-> ## Moving Files to a new folder
->
+## Moving Files to a new folder
+
 > After running the following commands,
 > Jamie realizes that she put the files `sucrose.dat` and `maltose.dat` into the wrong folder.
 > The files should have been placed in the `raw` folder.
@@ -434,6 +441,7 @@ quotes.txt
 > {: .language-bash}
 >
 > > ## Solution
+> >
 > > ```
 > > $ mv sucrose.dat maltose.dat ../raw
 > > ```
@@ -487,9 +495,8 @@ quotations.txt
 ```
 {: .output}
 
+## Renaming Files
 
-> ## Renaming Files
->
 > Suppose that you created a plain-text file in your current directory to contain a list of the
 > statistical tests you will need to do to analyze your data, and named it: `statstics.txt`
 >
@@ -502,6 +509,7 @@ quotations.txt
 > 4. `cp statstics.txt .`
 >
 > > ## Solution
+> >
 > > 1. No.  While this would create a file with the correct name,
 > > the incorrectly named file still exists in the directory
 > > and would need to be deleted.
@@ -514,8 +522,8 @@ quotations.txt
 > {: .solution}
 {: .challenge}
 
-> ## Moving and Copying
->
+## Moving and Copying
+
 > What is the output of the closing `ls` command in the sequence shown below?
 >
 > ~~~
@@ -543,10 +551,10 @@ quotations.txt
 > {: .language-bash}
 >
 >
-> 1.   `proteins-saved.dat recombined`
-> 2.   `recombined`
-> 3.   `proteins.dat recombined`
-> 4.   `proteins-saved.dat`
+> 1. `proteins-saved.dat recombined`
+> 2. `recombined`
+> 3. `proteins.dat recombined`
+> 4. `proteins-saved.dat`
 >
 > > ## Solution
 > > We start in the `/Users/jamie/data` directory, and create a new folder called `recombined`.
@@ -588,8 +596,7 @@ ls: cannot access 'quotes.txt': No such file or directory
 ```
 {: .error}
 
-> ## Deleting Is Forever
->
+## Deleting Is Forever
 > The Unix shell doesn't have a trash bin that we can recover deleted
 > files from (though most graphical interfaces to Unix do).  Instead,
 > when we delete files, they are unlinked from the file system so that
@@ -599,9 +606,8 @@ ls: cannot access 'quotes.txt': No such file or directory
 > file's disk space right away.
 {: .callout}
 
+## Using `rm` Safely
 
-> ## Using `rm` Safely
->
 > What happens when we execute `rm -i thesis_backup/quotations.txt`?
 > Why would we want this protection when using `rm`?
 >
@@ -652,8 +658,8 @@ Oftentimes one needs to copy or move several files at once.
 This can be done by providing a list of individual filenames,
 or specifying a naming pattern using wildcards.
 
-> ## Copy with Multiple Filenames
->
+## Copy with Multiple Filenames
+
 > For this exercise, you can test the commands in the `shell-lesson-data/exercise-data` directory.
 >
 > In the example below, what does `cp` do when given several filenames and a directory name?
@@ -697,8 +703,8 @@ or specifying a naming pattern using wildcards.
 
 ### Using wildcards for accessing multiple files at once
 
-> ## Wildcards
->
+## Wildcards
+
 > `*` is a **wildcard**, which matches zero or more  characters.
 > Let's consider the `shell-lesson-data/exercise-data/proteins` directory:
 > `*.pdb` matches `ethane.pdb`, `propane.pdb`, and every
@@ -727,8 +733,8 @@ or specifying a naming pattern using wildcards.
 > expanding wildcards.
 {: .callout}
 
-> ## List filenames matching a pattern
->
+## List filenames matching a pattern
+
 > When run in the `proteins` directory, which `ls` command(s) will
 > produce this output?
 >
@@ -760,8 +766,8 @@ or specifying a naming pattern using wildcards.
 > {: .solution}
 {: .challenge}
 
-> ## More on Wildcards
->
+## More on Wildcards
+
 > Sam has a directory containing calibration data, datasets, and descriptions of
 > the datasets:
 >
@@ -858,8 +864,8 @@ or specifying a naming pattern using wildcards.
 > {: .solution}
 {: .challenge}
 
-> ## Organizing Directories and Files
->
+## Organizing Directories and Files
+
 > Jamie is working on a project and she sees that her files aren't very well
 > organized:
 >
@@ -904,8 +910,8 @@ or specifying a naming pattern using wildcards.
 > {: .solution}
 {: .challenge}
 
-> ## Reproduce a folder structure
->
+## Reproduce a folder structure
+
 > You're starting a new experiment and would like to duplicate the directory
 > structure from your previous experiment so you can add new data.
 >
@@ -976,4 +982,3 @@ or specifying a naming pattern using wildcards.
 > > as the 'data' directory.
 > {: .solution}
 {: .challenge}
-
