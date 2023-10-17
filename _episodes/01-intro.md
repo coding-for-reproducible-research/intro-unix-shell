@@ -6,16 +6,19 @@ order: 2
 ---
 
 ### Questions
+
 - "What is a command shell and why would I use one?"
 
 ## Objectives
+
 - "Explain how the shell relates to the keyboard, the screen, the operating system, and users' programs."
 - "Explain when and why command-line interfaces should be used instead of graphical interfaces."
 
 ### Keypoints
+
 - "A shell is a program whose primary purpose is to read commands and run other programs."
--  "This lesson uses Bash, the default shell in many implementations of Unix."
--  "Programs can be run in Bash by entering commands at the command-line prompt."
+- "This lesson uses Bash, the default shell in many implementations of Unix."
+- "Programs can be run in Bash by entering commands at the command-line prompt."
 - "The shell's main advantages are its high action-to-keystroke ratio, its support for
 automating repetitive tasks, and its capacity to access networked machines."
 - "The shell's main disadvantages are its primarily textual nature and how
@@ -43,9 +46,7 @@ With the proper commands, the shell can repeat tasks with or without some modifi
 as many times as we want.
 Using the shell, the task in the literature example can be accomplished in seconds.
 
-
 ### The Shell
-
 
 The shell is a program where users can type commands.
 With the shell, it's possible to invoke complicated programs like climate modeling software
@@ -111,7 +112,8 @@ Documents   Library     Music       Public
 ~~~
 {: .output}
 
-> ## Command not found
+## Command not found
+
 > If the shell can't find a program whose name is the command you typed, it
 > will print an error message such as:
 >
@@ -127,7 +129,6 @@ Documents   Library     Music       Public
 > This might happen if the command was mis-typed or if the program corresponding to that command
 > is not installed.
 {: .callout}
-
 
 ## Nelle's Pipeline: A Typical Problem
 
@@ -160,6 +161,7 @@ once she has put a processing pipeline together,
 she will be able to use it again whenever she collects more data.
 
 In order to achieve her task, Nelle needs to know how to:
+
 - navigate to a file/directory
 - create a file/directory
 - check the length of a file
@@ -167,4 +169,3 @@ In order to achieve her task, Nelle needs to know how to:
 - retrieve a set of files
 - iterate over files
 - run a shell script containing her pipeline
-
