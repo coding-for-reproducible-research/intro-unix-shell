@@ -2,7 +2,7 @@
 
 # Intro to unix shell
 
-Please find the deployed site [here](https://uniexeterrse.github.io/intro-to-python/).
+Please find the deployed site [here](https://uniexeterrse.github.io/intro-unix-shell/).
 These notes accompany in-person and online teaching during the two sessions of the Intro to Unix Shell course.
 
 ## Source details
