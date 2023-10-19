@@ -970,7 +970,7 @@ or specifying a naming pattern using wildcards.
 > > The first set uses relative paths to create the top-level directory before
 > > the subdirectories.
 > >
-> > The third set of commands will give an error because the default behavior of `mkdir`
+> > The third set of commands will give an error because the default behaviour of `mkdir`
 > > won't create a subdirectory of a non-existent directory:
 > > the intermediate level folders must be created first.
 > >
