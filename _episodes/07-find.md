@@ -111,7 +111,7 @@ To restrict matches to lines containing the word 'The' on its own,
 we can give `grep` with the `-w` option.
 This will limit matches to word boundaries.
 
-Later in this lesson, we will also see how we can change the search behavior of grep
+Later in this lesson, we will also see how we can change the search behaviour of grep
 with respect to its case sensitivity.
 
 ~~~
