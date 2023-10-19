@@ -81,7 +81,7 @@ When the shell is first opened, you are presented with a **prompt**,
 indicating that the shell is waiting for input.
 
 ~~~
-$
+$ 
 ~~~
 {: .language-bash}
 
