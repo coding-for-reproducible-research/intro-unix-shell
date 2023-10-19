@@ -7,16 +7,16 @@ toc: true
 
 ## Welcome
 
-This workshop, and the others in the series, were put together by the Research Software Engineering Group supported by a team of volunteers. It has been adapted/influenced by Carpentries lessons. This is as part of an ongoing initiative to provide training for staff and students to expand their skill sets and position themselves to confidently perform the informatics elements of their research projects in an efficient and reproducible way. The programme and workshops are under constant evolution, and we are grateful for your feedback which is a core component of this process. 
+This workshop, and the others in the series, were put together by the Research Software Engineering Group supported by a team of volunteers. It has been adapted/influenced by Carpentries lessons. This is as part of an ongoing initiative to provide training for staff and students to expand their skill sets and position themselves to confidently perform the informatics elements of their research projects in an efficient and reproducible way. The programme and workshops are under constant evolution, and we are grateful for your feedback which is a core component of this process.
 
-We will start by introducing the workshop leaders and helpers. We are all here because we are passionate about sharing our knowledge and supporting the development of our colleagues. For some of us, this is not a requirement of our current position and we are doing this at the margins of our time. 
+We will start by introducing the workshop leaders and helpers. We are all here because we are passionate about sharing our knowledge and supporting the development of our colleagues. For some of us, this is not a requirement of our current position and we are doing this at the margins of our time.
 
 We will have a collaborative chat where we can post resources and answer questions.
 You are welcome to introduce yourselves there.
 
 ## Housekeeping
 
-The workshop in organised into episodes of content, which can be seen in the workshop schedule available on the course website. Our aim is to have an official break every 60-90 minutes, but there will also be periods between demonstrations where you are free to take additional comfort breaks if required.  This workshop will be delivered using live coding which you should follow along too. There will also be exercises to consolidate our knowledge. 
+The workshop in organised into episodes of content, which can be seen in the workshop schedule available on the course website. Our aim is to have an official break every 60-90 minutes, but there will also be periods between demonstrations where you are free to take additional comfort breaks if required.  This workshop will be delivered using live coding which you should follow along too. There will also be exercises to consolidate our knowledge.
 
 Our aim is to be responsive to the needs of the group, both in person and virtual.
 Therefore, think of the schedule as a guide rather than a strict timetable.
@@ -52,4 +52,4 @@ behaviour that you believe has broken the Code of Conduct – either to
 [researcherdevelopment@exeter.ac.uk](mailto:researcherdevelopment@exeter.ac.uk),
 or anonymously through [Exeter Speaks Out](https://www.exeter.ac.uk/about/speakout/).
 
-## Let's get started.
+## Let's get started!

@@ -6,15 +6,18 @@ order: 7
 --- 
 
 ## Questions
+
 - "How can I save and re-use commands?"
 
 ## Objectives
+
 - "Write a shell script that runs a command or series of commands for a fixed set of files."
 - "Run a shell script from the command line."
 - "Write a shell script that operates on a set of files defined by the user on the command line."
 - "Create pipelines that include shell scripts you, and others, have written."
 
 ## Keypoints
+
 - "Save commands in files (usually called shell scripts) for re-use."
 - "`bash [filename]` runs the commands saved in a file."
 - "`$@` refers to all of a shell script's command-line arguments."
@@ -321,7 +324,7 @@ $ bash sorted.sh *.pdb ../creatures/*.dat
 >
 > > ## Solution
 > >
-> > ```
+> > ~~~
 > > # Script to find unique species in csv files where species is the second data field
 > > # This script accepts any number of file names as command line arguments
 > >
@@ -332,11 +335,10 @@ $ bash sorted.sh *.pdb ../creatures/*.dat
 > >     # Extract species names
 > >     cut -d , -f 2 $file | sort | uniq
 > > done
-> > ```
+> > ~~~
 > > {: .language-bash}
 > {: .solution}
 {: .challenge}
-
 
 Suppose we have just run a series of commands that did something useful --- for example,
 that created a graph we'd like to use in a paper.
@@ -381,6 +383,7 @@ we have a completely accurate record of how we created that figure.
 > before running them. Why do you think it does this?
 >
 > > ## Solution
+> >
 > > If a command causes something to crash or hang, it might be useful
 > > to know what that command was, in order to investigate the problem.
 > > Were the command only be recorded after running it, we would not
@@ -398,14 +401,13 @@ and save it as a shell script.
 
 ## Nelle's Pipeline: Creating a Script
 
-
 Nelle's supervisor insisted that all her analytics must be reproducible.
 The easiest way to capture all the steps is in a script.
 
 First we return to Nelle's project directory:
-```
+~~~
 $ cd ../../north-pacific-gyre/
-```
+~~~
 {: .language-bash}
 
 She creates a file using `nano` ...
@@ -497,15 +499,16 @@ Of course, this introduces another trade-off between flexibility and complexity.
 > 4. An error because of the quotes around `*.pdb`
 >
 > > ## Solution
+> >
 > > The correct answer is 2.
 > >
 > > The special variables $1, $2 and $3 represent the command line arguments given to the
 > > script, such that the commands run are:
 > >
-> > ```
+> > ~~~
 > > $ head -n 1 cubane.pdb ethane.pdb octane.pdb pentane.pdb propane.pdb
 > > $ tail -n 1 cubane.pdb ethane.pdb octane.pdb pentane.pdb propane.pdb
-> > ```
+> > ~~~
 > > {: .language-bash}
 > > The shell does not expand `'*.pdb'` because it is enclosed by quote marks.
 > > As such, the first argument to the script is `'*.pdb'` which gets expanded within the
@@ -536,7 +539,7 @@ Of course, this introduces another trade-off between flexibility and complexity.
 >
 > > ## Solution
 > >
-> > ```
+> > ~~~
 > > # Shell script which takes two arguments:
 > > #    1. a directory name
 > > #    2. a file extension
@@ -544,7 +547,7 @@ Of course, this introduces another trade-off between flexibility and complexity.
 > > # with the most lines which matches the file extension.
 > >
 > > wc -l $1/*.$2 | sort -n | tail -n 2 | head -n 1
-> > ```
+> > ~~~
 > > {: .language-bash}
 > >
 > > The first part of the pipeline, `wc -l $1/*.$2 | sort -n`, counts
@@ -590,6 +593,7 @@ Of course, this introduces another trade-off between flexibility and complexity.
 > {: .language-bash}
 >
 > > ## Solutions
+> >
 > > In each case, the shell expands the wildcard in `*.pdb` before passing the resulting
 > > list of file names as arguments to the script.
 > >
@@ -602,9 +606,9 @@ Of course, this introduces another trade-off between flexibility and complexity.
 > > Script 3 would print all the arguments to the script (i.e. all the `.pdb` files),
 > > followed by `.pdb`.
 > > `$@` refers to *all* the arguments given to a shell script.
-> > ```
+> > ~~~
 > > cubane.pdb ethane.pdb methane.pdb octane.pdb pentane.pdb propane.pdb.pdb
-> > ```
+> > ~~~
 > > {: .output}
 > {: .solution}
 {: .challenge}
@@ -643,6 +647,7 @@ Of course, this introduces another trade-off between flexibility and complexity.
 > Which line is responsible for the error?
 >
 > > ## Solution
+> >
 > > The `-x` option causes `bash` to run in debug mode.
 > > This prints out each command as it is run, which will help you to locate errors.
 > > In this example, we can see that `echo` isn't printing anything. We have made a typo

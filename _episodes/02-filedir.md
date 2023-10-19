@@ -662,6 +662,7 @@ Run `pwd` and `ls -F` to ensure that we're in the directory we expect.
 > 9. `cd ..`
 >
 > > ## Solution
+> >
 > > 1. No: `.` stands for the current directory.
 > > 2. No: `/` stands for the root directory.
 > > 3. No: Amanda's home directory is `/Users/amanda`.
@@ -680,10 +681,10 @@ Run `pwd` and `ls -F` to ensure that we're in the directory we expect.
 > Using the filesystem diagram below, if `pwd` displays `/Users/thing`,
 > what will `ls -F ../backup` display?
 >
-> 1.  `../backup: No such file or directory`
-> 2.  `2012-12-01 2013-01-08 2013-01-27`
-> 3.  `2012-12-01/ 2013-01-08/ 2013-01-27/`
-> 4.  `original/ pnas_final/ pnas_sub/`
+> 1. `../backup: No such file or directory`
+> 2. `2012-12-01 2013-01-08 2013-01-27`
+> 3. `2012-12-01/ 2013-01-08/ 2013-01-27/`
+> 4. `original/ pnas_final/ pnas_sub/`
 >
 > [A directory tree below the Users directory where "/Users" contains the
 directories "backup" and "thing"; "/Users/backup" contains "original",
@@ -692,6 +693,7 @@ directories "backup" and "thing"; "/Users/backup" contains "original",
 "2013-01-27"](../fig/filesystem-challenge.svg)
 >
 > > ## Solution
+> >
 > > 1. No: there *is* a directory `backup` in `/Users`.
 > > 2. No: this is the content of `Users/thing/backup`,
 > >    but with `..`, we asked for one level further up.
@@ -718,11 +720,12 @@ directories "backup" and "thing"; "/Users/backup" contains "original",
 "/Users/thing/backup" contains "2012-12-01", "2013-01-08" and
 "2013-01-27"](../fig/filesystem-challenge.svg)
 >
-> 1.  `ls pwd`
-> 2.  `ls -r -F`
-> 3.  `ls -r -F /Users/backup`
+> 1. `ls pwd`
+> 2. `ls -r -F`
+> 3. `ls -r -F /Users/backup`
 >
 > > ## Solution
+> >
 > >  1. No: `pwd` is not the name of a directory.
 > >  2. Yes: `ls` without directory argument lists files and directories
 > >     in the current directory.
