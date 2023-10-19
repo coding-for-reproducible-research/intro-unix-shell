@@ -112,8 +112,8 @@ Similarly,
 we know that `/Users` is stored inside the root directory `/`
 because its name begins with `/`.
 
-> ## Slashes
->
+## Slashes
+
 > Notice that there are two meanings for the `/` character.
 > When it appears at the front of a file or directory name,
 > it refers to the root directory. When it appears *inside* a path,
@@ -181,8 +181,8 @@ we can see that our home directory contains only **sub-directories**.
 Any names in our output that don't have a classification symbol
 are plain old **files**.
 
-> ## Clearing your terminal
->
+## Clearing your terminal
+
 > If your screen gets too cluttered, you can clear your terminal using the
 > `clear` command. You can still access previous commands using <kbd>↑</kbd>
 > and <kbd>↓</kbd> to move line-by-line, or by scrolling in your terminal.
@@ -248,8 +248,8 @@ Mandatory arguments to long options are mandatory for short options, too.
 ~~~
 {: .output}
 
-> ## Unsupported command-line options
->
+## Unsupported command-line options
+
 > If you try to use an option that is not supported, `ls` and other commands
 > will usually print an error message similar to:
 >
@@ -265,7 +265,7 @@ Mandatory arguments to long options are mandatory for short options, too.
 > {: .error}
 {: .callout}
 
-#### The `man` command
+### The `man` command
 
 The other way to learn about `ls` is to type
 ~~~
@@ -287,8 +287,8 @@ If so, you can move between hits using <kbd>N</kbd> (for moving forward) and
 
 To **quit** the `man` pages, press <kbd>Q</kbd>.
 
-> ## Manual pages on the web
->
+## Manual pages on the web
+
 > Of course, there is a third way to access help for commands:
 > searching the internet via your web browser.
 > When using internet search, including the phrase `unix man page` in your search
@@ -300,8 +300,8 @@ To **quit** the `man` pages, press <kbd>Q</kbd>.
 > which covers many commands introduced within this lesson.
 {: .callout}
 
-> ## Exploring More `ls` Flags
->
+## Exploring More `ls` Flags
+
 > You can also use two options at the same time. What does the command `ls` do when used
 > with the `-l` option? What about if you use both the `-l` and the `-h` option?
 >
@@ -325,8 +325,8 @@ To **quit** the `man` pages, press <kbd>Q</kbd>.
 > </details>
 {: .challenge}
 
-> ## Listing in Reverse Chronological Order
->
+## Listing in Reverse Chronological Order
+
 > By default, `ls` lists the contents of a directory in alphabetical
 > order by name. The command `ls -t` lists items by time of last
 > change instead of alphabetically. The command `ls -r` lists the
@@ -335,7 +335,8 @@ To **quit** the `man` pages, press <kbd>Q</kbd>.
 > Hint: You may need to use the `-l` option to see the
 > last changed dates.
 >
-> > ## Solution
+## Solution
+
 > > The most recently changed file is listed last when using `-rt`. This
 > > can be very useful for finding your most recent edits or checking to
 > > see if a new output file was written.
@@ -521,8 +522,8 @@ Note that in most command line tools, multiple options can be combined
 with a single `-` and no spaces between the options: `ls -F -a` is
 equivalent to `ls -Fa`.
 
-> ## Other Hidden Files
->
+## Other Hidden Files
+
 > In addition to the hidden directories `..` and `.`, you may also see a file
 > called `.bash_profile`. This file usually contains shell configuration
 > settings. You may also see other files and directories beginning
@@ -605,8 +606,8 @@ $ cd /Users/nelle/Desktop/shell-lesson-data
 
 Run `pwd` and `ls -F` to ensure that we're in the directory we expect.
 
-> ## Two More Shortcuts
->
+## Two More Shortcuts
+
 > The shell interprets a tilde (`~`) character at the start of a path to
 > mean "the current user's home directory". For example, if Nelle's home
 > directory is `/Users/nelle`, then `~/data` is equivalent to
@@ -645,8 +646,8 @@ Run `pwd` and `ls -F` to ensure that we're in the directory we expect.
 > Run `cd -` again and you're back in `~/Desktop/shell-lesson-data/exercise-data/creatures`
 {: .callout}
 
-> ## Absolute vs Relative Paths
->
+## Absolute vs Relative Paths
+
 > Starting from `/Users/amanda/data`,
 > which of the following commands could Amanda use to navigate to her home directory,
 > which is `/Users/amanda`?
@@ -661,8 +662,8 @@ Run `pwd` and `ls -F` to ensure that we're in the directory we expect.
 > 8. `cd`
 > 9. `cd ..`
 >
-> > ## Solution
-> >
+## Solution
+
 > > 1. No: `.` stands for the current directory.
 > > 2. No: `/` stands for the root directory.
 > > 3. No: Amanda's home directory is `/Users/amanda`.
@@ -676,8 +677,8 @@ Run `pwd` and `ls -F` to ensure that we're in the directory we expect.
 > {: .solution}
 {: .challenge}
 
-> ## Relative Path Resolution
->
+## Relative Path Resolution
+
 > Using the filesystem diagram below, if `pwd` displays `/Users/thing`,
 > what will `ls -F ../backup` display?
 >
@@ -691,9 +692,9 @@ directories "backup" and "thing"; "/Users/backup" contains "original",
 "pnas_final" and "pnas_sub"; "/Users/thing" contains "backup"; and
 "/Users/thing/backup" contains "2012-12-01", "2013-01-08" and
 "2013-01-27"](../fig/filesystem-challenge.svg)
->
-> > ## Solution
-> >
+
+## Solution
+
 > > 1. No: there *is* a directory `backup` in `/Users`.
 > > 2. No: this is the content of `Users/thing/backup`,
 > >    but with `..`, we asked for one level further up.
@@ -702,8 +703,8 @@ directories "backup" and "thing"; "/Users/backup" contains "original",
 > {: .solution}
 {: .challenge}
 
-> ## `ls` Reading Comprehension
->
+## `ls` Reading Comprehension
+
 > Using the filesystem diagram below,
 > if `pwd` displays `/Users/backup`,
 > and `-r` tells `ls` to display things in reverse order,
@@ -723,9 +724,9 @@ directories "backup" and "thing"; "/Users/backup" contains "original",
 > 1. `ls pwd`
 > 2. `ls -r -F`
 > 3. `ls -r -F /Users/backup`
->
-> > ## Solution
-> >
+
+## Solution
+
 > >  1. No: `pwd` is not the name of a directory.
 > >  2. Yes: `ls` without directory argument lists files and directories
 > >     in the current directory.

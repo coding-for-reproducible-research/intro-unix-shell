@@ -89,8 +89,8 @@ ATOM     13  H           1      -3.172  -1.337   0.206  1.00  0.00
 Sure enough,
 our script's output is exactly what we would get if we ran that pipeline directly.
 
-> ## Text vs. Whatever
->
+## Text vs. Whatever
+
 > We usually call programs like Microsoft Word or LibreOffice Writer "text
 > editors", but we need to be a bit more careful when it comes to
 > programming. By default, Microsoft Word uses `.docx` files to store not
@@ -154,8 +154,8 @@ ATOM     13  H           1      -1.183   0.500  -1.412  1.00  0.00
 ~~~
 {: .output}
 
-> ## Double-Quotes Around Arguments
->
+## Double-Quotes Around Arguments
+
 > For the same reason that we put the loop variable inside double-quotes,
 > in case the filename happens to contain any spaces,
 > we surround `$1` with double-quotes.
@@ -294,8 +294,8 @@ $ bash sorted.sh *.pdb ../creatures/*.dat
 ~~~
 {: .output}
 
-> ## List Unique Species
->
+## List Unique Species
+
 > Leah has several hundred data files, each of which is formatted like this:
 >
 > ~~~
@@ -322,8 +322,8 @@ $ bash sorted.sh *.pdb ../creatures/*.dat
 > filenames as command-line arguments, and uses a variation of the above command
 > to print a list of the unique species appearing in each of those files separately.
 >
-> > ## Solution
-> >
+## Solution
+
 > > ~~~
 > > # Script to find unique species in csv files where species is the second data field
 > > # This script accepts any number of file names as command line arguments
@@ -368,8 +368,8 @@ After a moment's work in an editor to remove the serial numbers on the commands,
 and to remove the final line where we called the `history` command,
 we have a completely accurate record of how we created that figure.
 
-> ## Why Record Commands in the History Before Running Them?
->
+## Why Record Commands in the History Before Running Them?
+
 > If you run the command:
 >
 > ~~~
@@ -382,8 +382,8 @@ we have a completely accurate record of how we created that figure.
 > running it. In fact, the shell *always* adds commands to the log
 > before running them. Why do you think it does this?
 >
-> > ## Solution
-> >
+## Solution
+
 > > If a command causes something to crash or hang, it might be useful
 > > to know what that command was, in order to investigate the problem.
 > > Were the command only be recorded after running it, we would not
@@ -472,8 +472,8 @@ she could modify her script to check for command-line arguments,
 and use `NENE*A.txt NENE*B.txt` if none were provided.
 Of course, this introduces another trade-off between flexibility and complexity.
 
-> ## Variables in Shell Scripts
->
+## Variables in Shell Scripts
+
 > In the `proteins` directory, imagine you have a shell script called `script.sh` containing the
 > following commands:
 >
@@ -498,8 +498,8 @@ Of course, this introduces another trade-off between flexibility and complexity.
 > 3. The first and the last line of each file in the `proteins` directory
 > 4. An error because of the quotes around `*.pdb`
 >
-> > ## Solution
-> >
+## Solution
+
 > > The correct answer is 2.
 > >
 > > The special variables $1, $2 and $3 represent the command line arguments given to the
@@ -516,8 +516,8 @@ Of course, this introduces another trade-off between flexibility and complexity.
 > {: .solution}
 {: .challenge}
 
-> ## Find the Longest File With a Given Extension
->
+## Find the Longest File With a Given Extension
+
 > Write a shell script called `longest.sh` that takes the name of a
 > directory and a filename extension as its arguments, and prints
 > out the name of the file with the most lines in that directory
@@ -536,9 +536,9 @@ Of course, this introduces another trade-off between flexibility and complexity.
 > $ bash longest.sh shell-lesson-data/exercise-data/writing txt
 > ~~~
 > {: .language-bash}
->
-> > ## Solution
-> >
+
+## Solution
+
 > > ~~~
 > > # Shell script which takes two arguments:
 > > #    1. a directory name
@@ -563,8 +563,8 @@ Of course, this introduces another trade-off between flexibility and complexity.
 > {: .solution}
 {: .challenge}
 
-> ## Script Reading Comprehension
->
+## Script Reading Comprehension
+
 > For this question, consider the `shell-lesson-data/exercise-data/proteins` directory once again.
 > This contains a number of `.pdb` files in addition to any other files you
 > may have created.
@@ -591,9 +591,9 @@ Of course, this introduces another trade-off between flexibility and complexity.
 > echo $@.pdb
 > ~~~
 > {: .language-bash}
->
-> > ## Solutions
-> >
+
+## Solutions
+
 > > In each case, the shell expands the wildcard in `*.pdb` before passing the resulting
 > > list of file names as arguments to the script.
 > >
@@ -613,8 +613,8 @@ Of course, this introduces another trade-off between flexibility and complexity.
 > {: .solution}
 {: .challenge}
 
-> ## Debugging Scripts
->
+## Debugging Scripts
+
 > Suppose you have saved the following script in a file called `do-errors.sh`
 > in Nelle's `north-pacific-gyre/scripts` directory:
 >
@@ -646,8 +646,8 @@ Of course, this introduces another trade-off between flexibility and complexity.
 > What is the output showing you?
 > Which line is responsible for the error?
 >
-> > ## Solution
-> >
+## Solution
+
 > > The `-x` option causes `bash` to run in debug mode.
 > > This prints out each command as it is run, which will help you to locate errors.
 > > In this example, we can see that `echo` isn't printing anything. We have made a typo
