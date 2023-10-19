@@ -24,8 +24,10 @@ bundle exec jekyll serve
 
 Then open the site at the default server address of `http://127.0.0.1:4000`.
 
-## JavaScript and bootstrap
+## JavaScript and styling
 
 Most of the styling for the site is found in `_sass/jekyll-theme-slate.scss`.
-JavaScript, Jquery, and and `bootstrap.css` have been added for the sole purpose of create unfolding and unfolding solution blocks, with bootstrap icons next to them.
-This has been lifted from the Carpentries Python lesson repository, and probably contains far more fluff than it needs.
+Vanilla JavaScript is used to fold and unfold solution blocks.
+These blocks also use two icons from the [fontawesome](fontawesome.com) library.
+This open source icon library is far nicer to use than bootstrap.css.
+The stylesheet is imported in `_layouts/page.html`.

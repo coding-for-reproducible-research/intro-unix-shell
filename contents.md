@@ -11,4 +11,3 @@ This course will be a hands-on training workshop. The relevant course documentat
 
 <!-- Commenting out line below -->
 <ol> {% include toc.html %} </ol>
-

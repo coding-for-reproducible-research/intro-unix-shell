@@ -9,17 +9,17 @@ You will be required to download the dataset in [shell-lesson-data.zip][zip-file
 
 ## Links to additional material
 
-[Git for Windows][install_shell]
+- [Git for Windows][install_shell]
 
-[Install the Windows Subsystem for Linux][wsl]
+- [Install the Windows Subsystem for Linux][wsl]
 
-[How to Use Terminal on a Mac][mac-terminal]
+- [How to Use Terminal on a Mac][mac-terminal]
 
-[The Gnome Terminal on Linux][gnome-terminal] 
+- [The Gnome Terminal on Linux][gnome-terminal] 
 
-[The KDE Konsole on Linux][kde-konsole]
+- [The KDE Konsole on Linux][kde-konsole]
 
-[The xterm on Linux][xterm]
+- [The xterm on Linux][xterm]
 
 [zip-file]: {{ page.root }}/data/shell-lesson-data.zip
 [wsl]: https://docs.microsoft.com/en-us/windows/wsl/install-win10
