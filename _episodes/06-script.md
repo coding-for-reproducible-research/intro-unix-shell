@@ -650,4 +650,3 @@ Of course, this introduces another trade-off between flexibility and complexity.
 > > an empty string.
 > {: .solution}
 {: .challenge}
-

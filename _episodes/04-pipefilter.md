@@ -6,15 +6,18 @@ order: 5
 ---
 
 ## Questions
+
 - "How can I combine existing commands to do new things?"
 
 ## Objectives
+
 - "Redirect a command's output to a file."
 - "Construct command pipelines with two or more stages."
 - "Explain what usually happens if a program or pipeline isn't given any input to process."
 - "Explain the advantage of linking commands with pipes and filters."
 
 ## Keypoints
+
 - "`wc` counts lines, words, and characters in its inputs."
 - "`cat` displays the contents of its inputs."
 - "`sort` sorts its inputs."
@@ -590,7 +593,7 @@ so that you and other people can put those programs into pipes to multiply their
 >
 > The `uniq` command has a `-c` option which gives a count of the
 > number of times a line occurs in its input.  Assuming your current
-> directory is `shell-lesson-data/exercise-data/animal-counts`, 
+> directory is `shell-lesson-data/exercise-data/animal-counts`,
 > what command would you use to produce a table that shows
 > the total count of each type of animal in the file?
 >
@@ -603,7 +606,7 @@ so that you and other people can put those programs into pipes to multiply their
 > > ## Solution
 > > Option 4. is the correct answer.
 > > If you have difficulty understanding why, try running the commands, or sub-sections of
-> > the pipelines (make sure you are in the `shell-lesson-data/exercise-data/animal-counts` 
+> > the pipelines (make sure you are in the `shell-lesson-data/exercise-data/animal-counts`
 > > directory).
 > {: .solution}
 {: .challenge}
@@ -697,7 +700,6 @@ but there are actually some analyses she might do later where depth doesn't matt
 so instead, she'll have to be careful later on to select files using the wildcard expressions
 `NENE*A.txt NENE*B.txt`.
 
-
 > ## Removing Unneeded Files
 >
 > Suppose you want to delete your processed data files, and only keep
@@ -712,6 +714,7 @@ so instead, she'll have to be careful later on to select files using the wildcar
 > 4. `rm *.*`
 >
 > > ## Solution
+> >
 > > 1. This would remove `.txt` files with one-character names
 > > 2. This is the correct answer
 > > 3. The shell would expand `*` to match everything in the current directory,
@@ -721,4 +724,3 @@ so instead, she'll have to be careful later on to select files using the wildcar
 > > so this command would delete all files
 > {: .solution}
 {: .challenge}
-

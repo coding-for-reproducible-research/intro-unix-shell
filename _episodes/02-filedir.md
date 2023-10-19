@@ -6,11 +6,13 @@ order: 3
 ---
 
 ## Questions
+
 - "How can I move around on my computer?"
 - "How can I see what files and directories I have?"
 - "How can I specify the location of a file or directory on my computer?"
 
 ## Objectives
+
 - "Explain the similarities and differences between a file and a directory."
 - "Translate an absolute path into a relative path and vice versa."
 - "Construct absolute and relative paths that identify specific files and directories."
@@ -18,6 +20,7 @@ order: 3
 - "Demonstrate the use of tab completion and explain its advantages."
 
 ## Keypoints
+
 - "The file system is responsible for managing information on the disk."
 - "Information is stored in files, which are stored in directories (folders)."
 - "Directories can also store other directories, which then form a directory tree."
@@ -153,6 +156,7 @@ system and how you have customized your filesystem.)
 We can make its output more comprehensible by using the `-F` **option**
 which tells `ls` to classify the output
 by adding a marker to file and directory names to indicate what they are:
+
 - a trailing `/` indicates that this is a directory
 - `@` indicates a link
 - `*` indicates an executable
@@ -245,6 +249,7 @@ Mandatory arguments to long options are mandatory for short options, too.
 {: .output}
 
 > ## Unsupported command-line options
+>
 > If you try to use an option that is not supported, `ls` and other commands
 > will usually print an error message similar to:
 >
@@ -308,6 +313,7 @@ To **quit** the `man` pages, press <kbd>Q</kbd>.
 > <summary>Click me for solution</summary>
 >
 > > ## Solution
+> >
 > > The `-l` option makes `ls` use a **l**ong listing format, showing not only
 > > the file/directory names but also additional information, such as the file size
 > > and the time of its last modification. If you use both the `-h` option and the `-l` option,
@@ -724,8 +730,8 @@ directories "backup" and "thing"; "/Users/backup" contains "original",
 > {: .solution}
 {: .challenge}
 
-
 ## General Syntax of a Shell Command
+
 We have now encountered commands, options, and arguments,
 but it is perhaps useful to formalise some terminology.
 
@@ -771,7 +777,7 @@ total 28
 ~~~
 {: .output}
 
-Note that the sizes returned by `ls -s` are in *blocks*. 
+Note that the sizes returned by `ls -s` are in *blocks*.
 As these are defined differently for different operating systems,
 you may not obtain the same figures as in the example.
 
@@ -801,7 +807,6 @@ Network/              Volumes/
 ~~~
 {: .output}
 
-
 ### Nelle's Pipeline: Organizing Files
 
 Knowing this much about files and directories,
@@ -812,7 +817,6 @@ She creates a directory called `north-pacific-gyre`
 which will contain the data files from the assay machine,
 and her data processing scripts.
 
-
 Each of her physical samples is labelled according to her lab's convention
 with a unique ten-character ID,
 such as 'NENE01729A'.
@@ -822,7 +826,6 @@ so she decides to use it as part of each data file's name.
 Since the assay machine's output is plain text,
 she will call her files `NENE01729A.txt`, `NENE01812A.txt`, and so on.
 All 1520 files will go into the same directory.
-
 
 Now in her current directory `shell-lesson-data`,
 Nelle can see what files she has using the command:
@@ -873,4 +876,3 @@ This is called **tab completion**,
 and we will see it in many other tools as we go on.
 
 [Arguments]: https://swcarpentry.github.io/shell-novice/reference.html#argument
-
