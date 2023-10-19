@@ -309,9 +309,6 @@ To **quit** the `man` pages, press <kbd>Q</kbd>.
 > as file permissions and ownership), but the rest should be useful
 > nevertheless.
 >
-> <details>
-> <summary>Click me for solution</summary>
->
 > > ## Solution
 > >
 > > The `-l` option makes `ls` use a **l**ong listing format, showing not only
@@ -322,7 +319,6 @@ To **quit** the `man` pages, press <kbd>Q</kbd>.
 > > This can either be passed in separately, as `ls -l -h`, or combined `ls -lh`, although you
 > > can't always rely on the combined form.
 > {: .solution}
-> </details>
 {: .challenge}
 
 ## Listing in Reverse Chronological Order
@@ -335,8 +331,8 @@ To **quit** the `man` pages, press <kbd>Q</kbd>.
 > Hint: You may need to use the `-l` option to see the
 > last changed dates.
 >
-## Solution
-
+> > ## Solution
+> >
 > > The most recently changed file is listed last when using `-rt`. This
 > > can be very useful for finding your most recent edits or checking to
 > > see if a new output file was written.
@@ -661,9 +657,8 @@ Run `pwd` and `ls -F` to ensure that we're in the directory we expect.
 > 7. `cd ~/data/..`
 > 8. `cd`
 > 9. `cd ..`
->
-## Solution
-
+> >
+> > ## Solution
 > > 1. No: `.` stands for the current directory.
 > > 2. No: `/` stands for the root directory.
 > > 3. No: Amanda's home directory is `/Users/amanda`.
@@ -692,9 +687,8 @@ directories "backup" and "thing"; "/Users/backup" contains "original",
 "pnas_final" and "pnas_sub"; "/Users/thing" contains "backup"; and
 "/Users/thing/backup" contains "2012-12-01", "2013-01-08" and
 "2013-01-27"](../fig/filesystem-challenge.svg)
-
-## Solution
-
+> > 
+> > ## Solution
 > > 1. No: there *is* a directory `backup` in `/Users`.
 > > 2. No: this is the content of `Users/thing/backup`,
 > >    but with `..`, we asked for one level further up.
@@ -724,9 +718,7 @@ directories "backup" and "thing"; "/Users/backup" contains "original",
 > 1. `ls pwd`
 > 2. `ls -r -F`
 > 3. `ls -r -F /Users/backup`
-
-## Solution
-
+> > ## Solution
 > >  1. No: `pwd` is not the name of a directory.
 > >  2. Yes: `ls` without directory argument lists files and directories
 > >     in the current directory.
