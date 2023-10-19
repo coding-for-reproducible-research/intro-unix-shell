@@ -6,15 +6,18 @@ order: 7
 --- 
 
 ## Questions
+
 - "How can I save and re-use commands?"
 
 ## Objectives
+
 - "Write a shell script that runs a command or series of commands for a fixed set of files."
 - "Run a shell script from the command line."
 - "Write a shell script that operates on a set of files defined by the user on the command line."
 - "Create pipelines that include shell scripts you, and others, have written."
 
 ## Keypoints
+
 - "Save commands in files (usually called shell scripts) for re-use."
 - "`bash [filename]` runs the commands saved in a file."
 - "`$@` refers to all of a shell script's command-line arguments."
@@ -86,8 +89,8 @@ ATOM     13  H           1      -3.172  -1.337   0.206  1.00  0.00
 Sure enough,
 our script's output is exactly what we would get if we ran that pipeline directly.
 
-> ## Text vs. Whatever
->
+## Text vs. Whatever
+
 > We usually call programs like Microsoft Word or LibreOffice Writer "text
 > editors", but we need to be a bit more careful when it comes to
 > programming. By default, Microsoft Word uses `.docx` files to store not
@@ -151,8 +154,8 @@ ATOM     13  H           1      -1.183   0.500  -1.412  1.00  0.00
 ~~~
 {: .output}
 
-> ## Double-Quotes Around Arguments
->
+## Double-Quotes Around Arguments
+
 > For the same reason that we put the loop variable inside double-quotes,
 > in case the filename happens to contain any spaces,
 > we surround `$1` with double-quotes.
@@ -291,8 +294,8 @@ $ bash sorted.sh *.pdb ../creatures/*.dat
 ~~~
 {: .output}
 
-> ## List Unique Species
->
+## List Unique Species
+
 > Leah has several hundred data files, each of which is formatted like this:
 >
 > ~~~
@@ -319,9 +322,9 @@ $ bash sorted.sh *.pdb ../creatures/*.dat
 > filenames as command-line arguments, and uses a variation of the above command
 > to print a list of the unique species appearing in each of those files separately.
 >
-> > ## Solution
-> >
-> > ```
+## Solution
+
+> > ~~~
 > > # Script to find unique species in csv files where species is the second data field
 > > # This script accepts any number of file names as command line arguments
 > >
@@ -332,11 +335,10 @@ $ bash sorted.sh *.pdb ../creatures/*.dat
 > >     # Extract species names
 > >     cut -d , -f 2 $file | sort | uniq
 > > done
-> > ```
+> > ~~~
 > > {: .language-bash}
 > {: .solution}
 {: .challenge}
-
 
 Suppose we have just run a series of commands that did something useful --- for example,
 that created a graph we'd like to use in a paper.
@@ -366,8 +368,8 @@ After a moment's work in an editor to remove the serial numbers on the commands,
 and to remove the final line where we called the `history` command,
 we have a completely accurate record of how we created that figure.
 
-> ## Why Record Commands in the History Before Running Them?
->
+## Why Record Commands in the History Before Running Them?
+
 > If you run the command:
 >
 > ~~~
@@ -380,7 +382,8 @@ we have a completely accurate record of how we created that figure.
 > running it. In fact, the shell *always* adds commands to the log
 > before running them. Why do you think it does this?
 >
-> > ## Solution
+## Solution
+
 > > If a command causes something to crash or hang, it might be useful
 > > to know what that command was, in order to investigate the problem.
 > > Were the command only be recorded after running it, we would not
@@ -398,14 +401,13 @@ and save it as a shell script.
 
 ## Nelle's Pipeline: Creating a Script
 
-
 Nelle's supervisor insisted that all her analytics must be reproducible.
 The easiest way to capture all the steps is in a script.
 
 First we return to Nelle's project directory:
-```
+~~~
 $ cd ../../north-pacific-gyre/
-```
+~~~
 {: .language-bash}
 
 She creates a file using `nano` ...
@@ -468,10 +470,10 @@ without editing the script.
 If she wanted to be more adventurous,
 she could modify her script to check for command-line arguments,
 and use `NENE*A.txt NENE*B.txt` if none were provided.
-Of course, this introduces another tradeoff between flexibility and complexity.
+Of course, this introduces another trade-off between flexibility and complexity.
 
-> ## Variables in Shell Scripts
->
+## Variables in Shell Scripts
+
 > In the `proteins` directory, imagine you have a shell script called `script.sh` containing the
 > following commands:
 >
@@ -496,16 +498,17 @@ Of course, this introduces another tradeoff between flexibility and complexity.
 > 3. The first and the last line of each file in the `proteins` directory
 > 4. An error because of the quotes around `*.pdb`
 >
-> > ## Solution
+## Solution
+
 > > The correct answer is 2.
 > >
 > > The special variables $1, $2 and $3 represent the command line arguments given to the
 > > script, such that the commands run are:
 > >
-> > ```
+> > ~~~
 > > $ head -n 1 cubane.pdb ethane.pdb octane.pdb pentane.pdb propane.pdb
 > > $ tail -n 1 cubane.pdb ethane.pdb octane.pdb pentane.pdb propane.pdb
-> > ```
+> > ~~~
 > > {: .language-bash}
 > > The shell does not expand `'*.pdb'` because it is enclosed by quote marks.
 > > As such, the first argument to the script is `'*.pdb'` which gets expanded within the
@@ -513,8 +516,8 @@ Of course, this introduces another tradeoff between flexibility and complexity.
 > {: .solution}
 {: .challenge}
 
-> ## Find the Longest File With a Given Extension
->
+## Find the Longest File With a Given Extension
+
 > Write a shell script called `longest.sh` that takes the name of a
 > directory and a filename extension as its arguments, and prints
 > out the name of the file with the most lines in that directory
@@ -533,10 +536,10 @@ Of course, this introduces another tradeoff between flexibility and complexity.
 > $ bash longest.sh shell-lesson-data/exercise-data/writing txt
 > ~~~
 > {: .language-bash}
->
-> > ## Solution
-> >
-> > ```
+
+## Solution
+
+> > ~~~
 > > # Shell script which takes two arguments:
 > > #    1. a directory name
 > > #    2. a file extension
@@ -544,7 +547,7 @@ Of course, this introduces another tradeoff between flexibility and complexity.
 > > # with the most lines which matches the file extension.
 > >
 > > wc -l $1/*.$2 | sort -n | tail -n 2 | head -n 1
-> > ```
+> > ~~~
 > > {: .language-bash}
 > >
 > > The first part of the pipeline, `wc -l $1/*.$2 | sort -n`, counts
@@ -560,8 +563,8 @@ Of course, this introduces another tradeoff between flexibility and complexity.
 > {: .solution}
 {: .challenge}
 
-> ## Script Reading Comprehension
->
+## Script Reading Comprehension
+
 > For this question, consider the `shell-lesson-data/exercise-data/proteins` directory once again.
 > This contains a number of `.pdb` files in addition to any other files you
 > may have created.
@@ -588,8 +591,9 @@ Of course, this introduces another tradeoff between flexibility and complexity.
 > echo $@.pdb
 > ~~~
 > {: .language-bash}
->
-> > ## Solutions
+
+## Solutions
+
 > > In each case, the shell expands the wildcard in `*.pdb` before passing the resulting
 > > list of file names as arguments to the script.
 > >
@@ -602,15 +606,15 @@ Of course, this introduces another tradeoff between flexibility and complexity.
 > > Script 3 would print all the arguments to the script (i.e. all the `.pdb` files),
 > > followed by `.pdb`.
 > > `$@` refers to *all* the arguments given to a shell script.
-> > ```
+> > ~~~
 > > cubane.pdb ethane.pdb methane.pdb octane.pdb pentane.pdb propane.pdb.pdb
-> > ```
+> > ~~~
 > > {: .output}
 > {: .solution}
 {: .challenge}
 
-> ## Debugging Scripts
->
+## Debugging Scripts
+
 > Suppose you have saved the following script in a file called `do-errors.sh`
 > in Nelle's `north-pacific-gyre/scripts` directory:
 >
@@ -642,7 +646,8 @@ Of course, this introduces another tradeoff between flexibility and complexity.
 > What is the output showing you?
 > Which line is responsible for the error?
 >
-> > ## Solution
+## Solution
+
 > > The `-x` option causes `bash` to run in debug mode.
 > > This prints out each command as it is run, which will help you to locate errors.
 > > In this example, we can see that `echo` isn't printing anything. We have made a typo
@@ -650,4 +655,3 @@ Of course, this introduces another tradeoff between flexibility and complexity.
 > > an empty string.
 > {: .solution}
 {: .challenge}
-

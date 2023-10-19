@@ -6,15 +6,18 @@ order: 5
 ---
 
 ## Questions
+
 - "How can I combine existing commands to do new things?"
 
 ## Objectives
+
 - "Redirect a command's output to a file."
 - "Construct command pipelines with two or more stages."
 - "Explain what usually happens if a program or pipeline isn't given any input to process."
 - "Explain the advantage of linking commands with pipes and filters."
 
 ## Keypoints
+
 - "`wc` counts lines, words, and characters in its inputs."
 - "`cat` displays the contents of its inputs."
 - "`sort` sorts its inputs."
@@ -63,7 +66,6 @@ it counts the number of lines, words, and characters in files (from left to righ
 If we run the command `wc *.pdb`, the `*` in `*.pdb` matches zero or more characters,
 so the shell turns `*.pdb` into a list of all `.pdb` files in the current directory:
 
-
 ~~~
 $ wc *.pdb
 ~~~
@@ -104,8 +106,8 @@ $ wc -l *.pdb
 The `-m` and `-w` options can also be used with the `wc` command, to show
 only the number of characters or the number of words in the files.
 
-> ## Why Isn't It Doing Anything?
->
+## Why Isn't It Doing Anything?
+
 > What happens if a command is supposed to process a file, but we
 > don't give it a filename? For example, what if we type:
 >
@@ -123,9 +125,9 @@ only the number of characters or the number of words in the files.
 > If you make this kind of mistake, you can escape out of this state by holding down
 > the control key (<kbd>Ctrl</kbd>) and typing the letter <kbd>C</kbd> once and
 > letting go of the <kbd>Ctrl</kbd> key.
-> <kbd>Ctrl</kbd>+<kbd>C</kbd>
+>
+> This whole action is denoted by <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 {: .callout}
-
 
 ## Capturing output from commands
 
@@ -180,8 +182,8 @@ $ cat lengths.txt
 ~~~
 {: .output}
 
-> ## Output Page by Page
->
+## Output Page by Page
+
 > We'll continue to use `cat` in this lesson, for convenience and consistency,
 > but it has the disadvantage that it always dumps the whole file onto your screen.
 > More useful in practice is the command `less`,
@@ -191,14 +193,13 @@ $ cat lengths.txt
 > or back one by pressing `b`.  Press `q` to quit.
 {: .callout}
 
-
 ## Filtering output
 
 Next we'll use the `sort` command to sort the contents of the `lengths.txt` file.
 But first we'll use an exercise to learn a little about the sort command:
 
-> ## What Does `sort -n` Do?
->
+## What Does `sort -n` Do?
+
 > The file `shell-lesson-data/exercise-data/numbers.txt` contains the following lines:
 >
 > ~~~
@@ -233,8 +234,9 @@ But first we'll use an exercise to learn a little about the sort command:
 > {: .output}
 >
 > Explain why `-n` has this effect.
->
-> > ## Solution
+
+## Solution
+
 > > The `-n` option specifies a numerical rather than an alphanumerical sort.
 > {: .solution}
 {: .challenge}
@@ -260,7 +262,6 @@ $ sort -n lengths.txt
 ~~~
 {: .output}
 
-
 We can put the sorted list of lines in another temporary file called `sorted-lengths.txt`
 by putting `> sorted-lengths.txt` after the command,
 just as we used `> lengths.txt` to put the output of `wc` into `lengths.txt`.
@@ -285,8 +286,8 @@ and so on.
 Since `sorted-lengths.txt` contains the lengths of our files ordered from least to greatest,
 the output of `head` must be the file with the fewest lines.
 
-> ## Redirecting to the same file
->
+## Redirecting to the same file
+
 > It's a very bad idea to try redirecting
 > the output of a command that operates on a file
 > to the same file. For example:
@@ -301,8 +302,8 @@ the output of `head` must be the file with the fewest lines.
 > the contents of `lengths.txt`.
 {: .callout}
 
-> ## What Does `>>` Mean?
->
+## What Does `>>` Mean?
+
 > We have seen the use of `>`, but there is a similar operator `>>`
 > which works slightly differently.
 > We'll learn about the differences between these two operators by printing some strings.
@@ -332,8 +333,9 @@ the output of `head` must be the file with the fewest lines.
 > {: .language-bash}
 >
 > Hint: Try executing each command twice in a row and then examining the output files.
->
-> > ## Solution
+
+## Solution
+
 > > In the first example with `>`, the string 'hello' is written to `testfile01.txt`,
 > > but the file gets overwritten each time we run the command.
 > >
@@ -344,8 +346,8 @@ the output of `head` must be the file with the fewest lines.
 > {: .solution}
 {: .challenge}
 
-> ## Appending Data
->
+## Appending Data
+
 > We have already met the `head` command, which prints lines from the start of a file.
 > `tail` is similar, but prints lines from the end of a file instead.
 >
@@ -364,17 +366,18 @@ the output of `head` must be the file with the fewest lines.
 > 3. The first three lines and the last two lines of `animals.csv`
 > 4. The second and third lines of `animals.csv`
 >
-> > ## Solution
+## Solution
+
 > > Option 3 is correct.
 > > For option 1 to be correct we would only run the `head` command.
 > > For option 2 to be correct we would only run the `tail` command.
 > > For option 4 to be correct we would have to pipe the output of `head` into `tail -n 2`
-> >  by doing `head -n 3 animals.csv | tail -n 2 > animals-subset.csv`
+> > by doing `head -n 3 animals.csv | tail -n 2 > animals-subset.csv`
 > {: .solution}
 {: .challenge}
 
-
 ## Passing output to another command
+
 In our example of finding the file with the fewest lines,
 we are using two intermediate files `lengths.txt` and `sorted-lengths.txt` to store output.
 This is a confusing way to work because
@@ -400,6 +403,7 @@ as the input to the command on the right.
 This has removed the need for the `sorted-lengths.txt` file.
 
 ## Combining multiple commands
+
 Nothing prevents us from chaining pipes consecutively.
 We can for example send the output of `wc` directly to `sort`,
 and then the resulting output to `head`.
@@ -440,7 +444,6 @@ and saying 'the log of three times *x*'.
 In our case,
 the calculation is 'head of sort of line count of `*.pdb`'.
 
-
 The redirection and pipes used in the last few commands are illustrated below:
 
 [Redirects and Pipes of different commands: "wc -l *.pdb" will direct the
@@ -450,8 +453,8 @@ output of the "wc" command is the input to the "sort" command, the output of
 the "sort" command is the input to the "head" command and the output of the
 "head" command is directed to the shell](../fig/redirects-and-pipes.svg)
 
-> ## Piping Commands Together
->
+## Piping Commands Together
+
 > In our current directory, we want to find the 3 files which have the least number of
 > lines. Which command listed below would work?
 >
@@ -459,8 +462,9 @@ the "sort" command is the input to the "head" command and the output of the
 > 2. `wc -l * | sort -n | head -n 1-3`
 > 3. `wc -l * | head -n 3 | sort -n`
 > 4. `wc -l * | sort -n | head -n 3`
->
-> > ## Solution
+
+## Solution
+
 > > Option 4 is the solution.
 > > The pipe character `|` is used to connect the output from one command to
 > > the input of another.
@@ -469,8 +473,8 @@ the "sort" command is the input to the "head" command and the output of the
 > {: .solution}
 {: .challenge}
 
-
 ## Tools designed to work together
+
 This idea of linking programs together is why Unix has been so successful.
 Instead of creating enormous programs that try to do many different things,
 Unix programmers focus on creating lots of simple tools that each do one job well,
@@ -491,9 +495,8 @@ can be combined with every other program that behaves this way as well.
 You can *and should* write your programs this way
 so that you and other people can put those programs into pipes to multiply their power.
 
+## Pipe Reading Comprehension
 
-> ## Pipe Reading Comprehension
->
 > A file called `animals.csv` (in the `shell-lesson-data/exercise-data/animal-counts` folder)
 > contains the following data:
 >
@@ -518,24 +521,25 @@ so that you and other people can put those programs into pipes to multiply their
 > {: .language-bash}
 > Hint: build the pipeline up one command at a time to test your understanding
 >
-> > ## Solution
+## Solution
+
 > > The `head` command extracts the first 5 lines from `animals.csv`.
 > > Then, the last 3 lines are extracted from the previous 5 by using the `tail` command.
 > > With the `sort -r` command those 3 lines are sorted in reverse order and finally,
 > > the output is redirected to a file `final.txt`.
 > > The content of this file can be checked by executing `cat final.txt`.
 > > The file should contain the following lines:
-> > ```
+> > ~~~
 > > 2012-11-06,rabbit,19
 > > 2012-11-06,deer,2
 > > 2012-11-05,raccoon,7
-> > ```
+> > ~~~
 > > {: .source}
 > {: .solution}
 {: .challenge}
 
-> ## Pipe Construction
->
+## Pipe Construction
+
 > For the file `animals.csv` from the previous exercise, consider the following command:
 >
 > ~~~
@@ -566,17 +570,18 @@ so that you and other people can put those programs into pipes to multiply their
 > How could you extend this pipeline (using `uniq` and another command) to find
 > out what animals the file contains (without any duplicates in their
 > names)?
->
-> > ## Solution
-> > ```
+
+## Solution
+
+> > ~~~
 > > $ cut -d , -f 2 animals.csv | sort | uniq
-> > ```
+> > ~~~
 > > {: .language-bash}
 > {: .solution}
 {: .challenge}
 
-> ## Which Pipe?
->
+## Which Pipe?
+
 > The file `animals.csv` contains 8 lines of data formatted as follows:
 >
 > ~~~
@@ -590,20 +595,21 @@ so that you and other people can put those programs into pipes to multiply their
 >
 > The `uniq` command has a `-c` option which gives a count of the
 > number of times a line occurs in its input.  Assuming your current
-> directory is `shell-lesson-data/exercise-data/animal-counts`, 
+> directory is `shell-lesson-data/exercise-data/animal-counts`,
 > what command would you use to produce a table that shows
 > the total count of each type of animal in the file?
 >
-> 1.  `sort animals.csv | uniq -c`
-> 2.  `sort -t, -k2,2 animals.csv | uniq -c`
-> 3.  `cut -d, -f 2 animals.csv | uniq -c`
-> 4.  `cut -d, -f 2 animals.csv | sort | uniq -c`
-> 5.  `cut -d, -f 2 animals.csv | sort | uniq -c | wc -l`
->
-> > ## Solution
+> 1. `sort animals.csv | uniq -c`
+> 2. `sort -t, -k2,2 animals.csv | uniq -c`
+> 3. `cut -d, -f 2 animals.csv | uniq -c`
+> 4. `cut -d, -f 2 animals.csv | sort | uniq -c`
+> 5. `cut -d, -f 2 animals.csv | sort | uniq -c | wc -l`
+
+## Solution
+
 > > Option 4. is the correct answer.
 > > If you have difficulty understanding why, try running the commands, or sub-sections of
-> > the pipelines (make sure you are in the `shell-lesson-data/exercise-data/animal-counts` 
+> > the pipelines (make sure you are in the `shell-lesson-data/exercise-data/animal-counts`
 > > directory).
 > {: .solution}
 {: .challenge}
@@ -697,9 +703,8 @@ but there are actually some analyses she might do later where depth doesn't matt
 so instead, she'll have to be careful later on to select files using the wildcard expressions
 `NENE*A.txt NENE*B.txt`.
 
+## Removing Unneeded Files
 
-> ## Removing Unneeded Files
->
 > Suppose you want to delete your processed data files, and only keep
 > your raw files and processing script to save storage.
 > The raw files end in `.dat` and the processed files end in `.txt`.
@@ -711,7 +716,8 @@ so instead, she'll have to be careful later on to select files using the wildcar
 > 3. `rm * .txt`
 > 4. `rm *.*`
 >
-> > ## Solution
+## Solution
+
 > > 1. This would remove `.txt` files with one-character names
 > > 2. This is the correct answer
 > > 3. The shell would expand `*` to match everything in the current directory,
@@ -721,4 +727,3 @@ so instead, she'll have to be careful later on to select files using the wildcar
 > > so this command would delete all files
 > {: .solution}
 {: .challenge}
-

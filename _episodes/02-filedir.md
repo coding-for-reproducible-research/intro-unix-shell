@@ -6,11 +6,13 @@ order: 3
 ---
 
 ## Questions
+
 - "How can I move around on my computer?"
 - "How can I see what files and directories I have?"
 - "How can I specify the location of a file or directory on my computer?"
 
 ## Objectives
+
 - "Explain the similarities and differences between a file and a directory."
 - "Translate an absolute path into a relative path and vice versa."
 - "Construct absolute and relative paths that identify specific files and directories."
@@ -18,6 +20,7 @@ order: 3
 - "Demonstrate the use of tab completion and explain its advantages."
 
 ## Keypoints
+
 - "The file system is responsible for managing information on the disk."
 - "Information is stored in files, which are stored in directories (folders)."
 - "Directories can also store other directories, which then form a directory tree."
@@ -38,7 +41,7 @@ which hold information,
 and directories (also called 'folders'),
 which hold files or other directories.
 
-Several commands are frequently used to create, inspect, rename, and delete files and directories.
+Several commands are frequently used to create, inspect, rename, modify, and delete files and directories.
 To start exploring them, we'll go to our open shell window.
 
 First, let's find out where we are by running a command called `pwd`
@@ -109,8 +112,8 @@ Similarly,
 we know that `/Users` is stored inside the root directory `/`
 because its name begins with `/`.
 
-> ## Slashes
->
+## Slashes
+
 > Notice that there are two meanings for the `/` character.
 > When it appears at the front of a file or directory name,
 > it refers to the root directory. When it appears *inside* a path,
@@ -119,14 +122,14 @@ because its name begins with `/`.
 
 Underneath `/Users`,
 we find one directory for each user with an account on Nelle's machine,
-her colleagues *imhotep* and *larry*.
+her colleagues *Imhotep* and *Larry*.
 
 [Like other directories, home directories are sub-directories underneath
 "/Users" like "/Users/imhotep", "/Users/larry" or
 "/Users/nelle"](../fig/home-directories.svg)
 
-The user *imhotep*'s files are stored in `/Users/imhotep`,
-user *larry*'s in `/Users/larry`,
+The user *Imhotep*'s files are stored in `/Users/imhotep`,
+user *Larry*'s in `/Users/larry`,
 and Nelle's in `/Users/nelle`.  Because Nelle is the user in our
 examples here, therefore we get `/Users/nelle` as our home directory.
 Typically, when you open a new command prompt, you will be in
@@ -153,6 +156,7 @@ system and how you have customized your filesystem.)
 We can make its output more comprehensible by using the `-F` **option**
 which tells `ls` to classify the output
 by adding a marker to file and directory names to indicate what they are:
+
 - a trailing `/` indicates that this is a directory
 - `@` indicates a link
 - `*` indicates an executable
@@ -177,8 +181,8 @@ we can see that our home directory contains only **sub-directories**.
 Any names in our output that don't have a classification symbol
 are plain old **files**.
 
-> ## Clearing your terminal
->
+## Clearing your terminal
+
 > If your screen gets too cluttered, you can clear your terminal using the
 > `clear` command. You can still access previous commands using <kbd>↑</kbd>
 > and <kbd>↓</kbd> to move line-by-line, or by scrolling in your terminal.
@@ -244,7 +248,8 @@ Mandatory arguments to long options are mandatory for short options, too.
 ~~~
 {: .output}
 
-> ## Unsupported command-line options
+## Unsupported command-line options
+
 > If you try to use an option that is not supported, `ls` and other commands
 > will usually print an error message similar to:
 >
@@ -260,7 +265,7 @@ Mandatory arguments to long options are mandatory for short options, too.
 > {: .error}
 {: .callout}
 
-#### The `man` command
+### The `man` command
 
 The other way to learn about `ls` is to type
 ~~~
@@ -282,8 +287,8 @@ If so, you can move between hits using <kbd>N</kbd> (for moving forward) and
 
 To **quit** the `man` pages, press <kbd>Q</kbd>.
 
-> ## Manual pages on the web
->
+## Manual pages on the web
+
 > Of course, there is a third way to access help for commands:
 > searching the internet via your web browser.
 > When using internet search, including the phrase `unix man page` in your search
@@ -295,8 +300,8 @@ To **quit** the `man` pages, press <kbd>Q</kbd>.
 > which covers many commands introduced within this lesson.
 {: .callout}
 
-> ## Exploring More `ls` Flags
->
+## Exploring More `ls` Flags
+
 > You can also use two options at the same time. What does the command `ls` do when used
 > with the `-l` option? What about if you use both the `-l` and the `-h` option?
 >
@@ -308,17 +313,20 @@ To **quit** the `man` pages, press <kbd>Q</kbd>.
 > <summary>Click me for solution</summary>
 >
 > > ## Solution
+> >
 > > The `-l` option makes `ls` use a **l**ong listing format, showing not only
 > > the file/directory names but also additional information, such as the file size
 > > and the time of its last modification. If you use both the `-h` option and the `-l` option,
 > > this makes the file size '**h**uman readable', i.e. displaying something like `5.3K`
 > > instead of `5369`.
+> > This can either be passed in separately, as `ls -l -h`, or combined `ls -lh`, although you
+> > can't always rely on the combined form.
 > {: .solution}
 > </details>
 {: .challenge}
 
-> ## Listing in Reverse Chronological Order
->
+## Listing in Reverse Chronological Order
+
 > By default, `ls` lists the contents of a directory in alphabetical
 > order by name. The command `ls -t` lists items by time of last
 > change instead of alphabetically. The command `ls -r` lists the
@@ -327,7 +335,8 @@ To **quit** the `man` pages, press <kbd>Q</kbd>.
 > Hint: You may need to use the `-l` option to see the
 > last changed dates.
 >
-> > ## Solution
+## Solution
+
 > > The most recently changed file is listed last when using `-rt`. This
 > > can be very useful for finding your most recent edits or checking to
 > > see if a new output file was written.
@@ -471,7 +480,7 @@ $ cd ..
 {: .language-bash}
 
 `..` is a special directory name meaning
-"the directory containing this one",
+"the directory containing the current directory",
 or more succinctly,
 the **parent** of the current directory.
 Sure enough,
@@ -513,8 +522,8 @@ Note that in most command line tools, multiple options can be combined
 with a single `-` and no spaces between the options: `ls -F -a` is
 equivalent to `ls -Fa`.
 
-> ## Other Hidden Files
->
+## Other Hidden Files
+
 > In addition to the hidden directories `..` and `.`, you may also see a file
 > called `.bash_profile`. This file usually contains shell configuration
 > settings. You may also see other files and directories beginning
@@ -597,8 +606,8 @@ $ cd /Users/nelle/Desktop/shell-lesson-data
 
 Run `pwd` and `ls -F` to ensure that we're in the directory we expect.
 
-> ## Two More Shortcuts
->
+## Two More Shortcuts
+
 > The shell interprets a tilde (`~`) character at the start of a path to
 > mean "the current user's home directory". For example, if Nelle's home
 > directory is `/Users/nelle`, then `~/data` is equivalent to
@@ -637,8 +646,8 @@ Run `pwd` and `ls -F` to ensure that we're in the directory we expect.
 > Run `cd -` again and you're back in `~/Desktop/shell-lesson-data/exercise-data/creatures`
 {: .callout}
 
-> ## Absolute vs Relative Paths
->
+## Absolute vs Relative Paths
+
 > Starting from `/Users/amanda/data`,
 > which of the following commands could Amanda use to navigate to her home directory,
 > which is `/Users/amanda`?
@@ -653,7 +662,8 @@ Run `pwd` and `ls -F` to ensure that we're in the directory we expect.
 > 8. `cd`
 > 9. `cd ..`
 >
-> > ## Solution
+## Solution
+
 > > 1. No: `.` stands for the current directory.
 > > 2. No: `/` stands for the root directory.
 > > 3. No: Amanda's home directory is `/Users/amanda`.
@@ -667,23 +677,24 @@ Run `pwd` and `ls -F` to ensure that we're in the directory we expect.
 > {: .solution}
 {: .challenge}
 
-> ## Relative Path Resolution
->
+## Relative Path Resolution
+
 > Using the filesystem diagram below, if `pwd` displays `/Users/thing`,
 > what will `ls -F ../backup` display?
 >
-> 1.  `../backup: No such file or directory`
-> 2.  `2012-12-01 2013-01-08 2013-01-27`
-> 3.  `2012-12-01/ 2013-01-08/ 2013-01-27/`
-> 4.  `original/ pnas_final/ pnas_sub/`
+> 1. `../backup: No such file or directory`
+> 2. `2012-12-01 2013-01-08 2013-01-27`
+> 3. `2012-12-01/ 2013-01-08/ 2013-01-27/`
+> 4. `original/ pnas_final/ pnas_sub/`
 >
 > [A directory tree below the Users directory where "/Users" contains the
 directories "backup" and "thing"; "/Users/backup" contains "original",
 "pnas_final" and "pnas_sub"; "/Users/thing" contains "backup"; and
 "/Users/thing/backup" contains "2012-12-01", "2013-01-08" and
 "2013-01-27"](../fig/filesystem-challenge.svg)
->
-> > ## Solution
+
+## Solution
+
 > > 1. No: there *is* a directory `backup` in `/Users`.
 > > 2. No: this is the content of `Users/thing/backup`,
 > >    but with `..`, we asked for one level further up.
@@ -692,8 +703,8 @@ directories "backup" and "thing"; "/Users/backup" contains "original",
 > {: .solution}
 {: .challenge}
 
-> ## `ls` Reading Comprehension
->
+## `ls` Reading Comprehension
+
 > Using the filesystem diagram below,
 > if `pwd` displays `/Users/backup`,
 > and `-r` tells `ls` to display things in reverse order,
@@ -710,11 +721,12 @@ directories "backup" and "thing"; "/Users/backup" contains "original",
 "/Users/thing/backup" contains "2012-12-01", "2013-01-08" and
 "2013-01-27"](../fig/filesystem-challenge.svg)
 >
-> 1.  `ls pwd`
-> 2.  `ls -r -F`
-> 3.  `ls -r -F /Users/backup`
->
-> > ## Solution
+> 1. `ls pwd`
+> 2. `ls -r -F`
+> 3. `ls -r -F /Users/backup`
+
+## Solution
+
 > >  1. No: `pwd` is not the name of a directory.
 > >  2. Yes: `ls` without directory argument lists files and directories
 > >     in the current directory.
@@ -722,8 +734,8 @@ directories "backup" and "thing"; "/Users/backup" contains "original",
 > {: .solution}
 {: .challenge}
 
-
 ## General Syntax of a Shell Command
+
 We have now encountered commands, options, and arguments,
 but it is perhaps useful to formalise some terminology.
 
@@ -741,7 +753,7 @@ $ ls -F /
 **argument** `/`.
 We've already encountered options  which
 either start with a single dash (`-`) or two dashes (`--`),
-and they change the behavior of a command.
+and they change the behaviour of a command.
 [Arguments] tell the command what to operate on (e.g. files and directories).
 Sometimes options and arguments are referred to as **parameters**.
 A command can be called with more than one option and more than one argument, but a
@@ -769,7 +781,7 @@ total 28
 ~~~
 {: .output}
 
-Note that the sizes returned by `ls -s` are in *blocks*. 
+Note that the sizes returned by `ls -s` are in *blocks*.
 As these are defined differently for different operating systems,
 you may not obtain the same figures as in the example.
 
@@ -799,7 +811,6 @@ Network/              Volumes/
 ~~~
 {: .output}
 
-
 ### Nelle's Pipeline: Organizing Files
 
 Knowing this much about files and directories,
@@ -810,7 +821,6 @@ She creates a directory called `north-pacific-gyre`
 which will contain the data files from the assay machine,
 and her data processing scripts.
 
-
 Each of her physical samples is labelled according to her lab's convention
 with a unique ten-character ID,
 such as 'NENE01729A'.
@@ -820,7 +830,6 @@ so she decides to use it as part of each data file's name.
 Since the assay machine's output is plain text,
 she will call her files `NENE01729A.txt`, `NENE01812A.txt`, and so on.
 All 1520 files will go into the same directory.
-
 
 Now in her current directory `shell-lesson-data`,
 Nelle can see what files she has using the command:
@@ -871,4 +880,3 @@ This is called **tab completion**,
 and we will see it in many other tools as we go on.
 
 [Arguments]: https://swcarpentry.github.io/shell-novice/reference.html#argument
-
