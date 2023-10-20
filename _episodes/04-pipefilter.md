@@ -234,6 +234,7 @@ But first we'll use an exercise to learn a little about the sort command:
 > {: .output}
 >
 > Explain why `-n` has this effect.
+>
 > > ## Solution
 > >
 > > The `-n` option specifies a numerical rather than an alphanumerical sort.
@@ -332,7 +333,9 @@ the output of `head` must be the file with the fewest lines.
 > {: .language-bash}
 >
 > Hint: Try executing each command twice in a row and then examining the output files.
+>
 > > ## Solution
+> >
 > > In the first example with `>`, the string 'hello' is written to `testfile01.txt`,
 > > but the file gets overwritten each time we run the command.
 > >
@@ -364,6 +367,7 @@ the output of `head` must be the file with the fewest lines.
 > 4. The second and third lines of `animals.csv`
 >
 > > ## Solution
+> >
 > > Option 3 is correct.
 > > For option 1 to be correct we would only run the `head` command.
 > > For option 2 to be correct we would only run the `tail` command.
@@ -458,7 +462,9 @@ the "sort" command is the input to the "head" command and the output of the
 > 2. `wc -l * | sort -n | head -n 1-3`
 > 3. `wc -l * | head -n 3 | sort -n`
 > 4. `wc -l * | sort -n | head -n 3`
+>
 > > ## Solution
+> >
 > > Option 4 is the solution.
 > > The pipe character `|` is used to connect the output from one command to
 > > the input of another.
@@ -516,6 +522,7 @@ so that you and other people can put those programs into pipes to multiply their
 > Hint: build the pipeline up one command at a time to test your understanding
 >
 > > ## Solution
+> >
 > > The `head` command extracts the first 5 lines from `animals.csv`.
 > > Then, the last 3 lines are extracted from the previous 5 by using the `tail` command.
 > > With the `sort -r` command those 3 lines are sorted in reverse order and finally,
@@ -563,7 +570,9 @@ so that you and other people can put those programs into pipes to multiply their
 > How could you extend this pipeline (using `uniq` and another command) to find
 > out what animals the file contains (without any duplicates in their
 > names)?
+>
 > > ## Solution
+> >
 > > ~~~
 > > $ cut -d , -f 2 animals.csv | sort | uniq
 > > ~~~
@@ -595,7 +604,9 @@ so that you and other people can put those programs into pipes to multiply their
 > 3. `cut -d, -f 2 animals.csv | uniq -c`
 > 4. `cut -d, -f 2 animals.csv | sort | uniq -c`
 > 5. `cut -d, -f 2 animals.csv | sort | uniq -c | wc -l`
+>
 > > ## Solution
+> >
 > > Option 4. is the correct answer.
 > > If you have difficulty understanding why, try running the commands, or sub-sections of
 > > the pipelines (make sure you are in the `shell-lesson-data/exercise-data/animal-counts`
@@ -706,6 +717,7 @@ so instead, she'll have to be careful later on to select files using the wildcar
 > 4. `rm *.*`
 >
 > > ## Solution
+> >
 > > 1. This would remove `.txt` files with one-character names
 > > 2. This is the correct answer
 > > 3. The shell would expand `*` to match everything in the current directory,

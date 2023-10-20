@@ -557,6 +557,7 @@ quotations.txt
 > 4. `proteins-saved.dat`
 >
 > > ## Solution
+> >
 > > We start in the `/Users/jamie/data` directory, and create a new folder called `recombined`.
 > > The second line moves (`mv`) the file `proteins.dat` to the new folder (`recombined`).
 > > The third line makes a copy of the file we just moved.
@@ -612,6 +613,7 @@ ls: cannot access 'quotes.txt': No such file or directory
 > Why would we want this protection when using `rm`?
 >
 > > ## Solution
+> >
 > > ```
 > > rm: remove regular file 'thesis_backup/quotations.txt'? y
 > > ```
@@ -687,6 +689,7 @@ or specifying a naming pattern using wildcards.
 > {: .language-bash}
 >
 > > ## Solution
+> >
 > > If given more than one file name followed by a directory name
 > > (i.e. the destination directory must be the last argument),
 > > `cp` copies the files to the named directory.
@@ -746,6 +749,7 @@ or specifying a naming pattern using wildcards.
 > 4. `ls ethane.*`
 >
 > > ## Solution
+> >
 >>  The solution is `3.`
 >>
 >> `1.` shows all files whose names contain zero or more characters (`*`)
@@ -855,6 +859,7 @@ or specifying a naming pattern using wildcards.
 > {: .language-bash}
 >
 > > ## Solution
+> >
 > > ```
 > > $ cp *calibration.txt backup/calibration
 > > $ cp 2015-11-* send_to_bob/all_november_files/
@@ -900,6 +905,7 @@ or specifying a naming pattern using wildcards.
 > {: .output}
 >
 > > ## Solution
+> >
 > > ```
 > > mv *.dat analyzed
 > > ```
@@ -966,6 +972,7 @@ or specifying a naming pattern using wildcards.
 > {: .language-bash}
 >
 > > ## Solution
+> >
 > > The first two sets of commands achieve this objective.
 > > The first set uses relative paths to create the top-level directory before
 > > the subdirectories.
