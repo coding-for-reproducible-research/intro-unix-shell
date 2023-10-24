@@ -6,16 +6,19 @@ order: 8
 ---
 
 ## Questions
+
 - "How can I find files?"
 - "How can I find things in files?"
 
 ## Objectives
+
 - "Use `grep` to select lines from text files that match simple patterns."
 - "Use `find` to find files and directories whose names match simple patterns."
 - "Use the output of one command as the command-line argument(s) to another command."
 - "Explain what is meant by 'text' and 'binary' files, and why many common tools don't handle the latter well."
 
 ## Keypoints
+
 - "`find` finds files with specific properties that match patterns."
 - "`grep` selects lines in files that match patterns."
 - "`--help` is an option supported by many bash commands, and programs that can be run from within Bash, to display more information on how to use these commands or programs."
@@ -57,8 +60,8 @@ Software is like that.
 ~~~
 {: .output}
 
-> ## Forever, or Five Years
->
+## Forever, or Five Years
+
 > We haven't linked to the original haiku because
 > they don't appear to be on *Salon*'s site any longer.
 > As [Jeff Rothenberg said](https://www.clir.org/wp-content/uploads/sites/6/ensuring.pdf),
@@ -213,7 +216,6 @@ $ grep -n -w -v "the" haiku.txt
 ~~~
 {: .output}
 
-
 If we use the `-r` (recursive) option,
 `grep` can search for a pattern recursively through a set of files in subdirectories.
 
@@ -262,8 +264,8 @@ Miscellaneous:
 ~~~
 {: .output}
 
-> ## Using `grep`
->
+## Using `grep`
+
 > Which command would result in the following output:
 >
 > ~~~
@@ -283,8 +285,8 @@ Miscellaneous:
 > {: .solution}
 {: .challenge}
 
-> ## Wildcards
->
+## Wildcards
+
 > `grep`'s real power doesn't come from its options, though; it comes from
 > the fact that patterns can include wildcards. (The technical name for
 > these is **regular expressions**, which
@@ -313,8 +315,8 @@ Miscellaneous:
 > matches an actual 'o'.
 {: .callout}
 
-> ## Tracking a Species
->
+## Tracking a Species
+
 > Leah has several hundred
 > data files saved in one directory, each of which is formatted like this:
 >
@@ -382,8 +384,8 @@ Miscellaneous:
 > {: .solution}
 {: .challenge}
 
-> ## Little Women
->
+## Little Women
+
 > You and your friend, having just finished reading *Little Women* by
 > Louisa May Alcott, are in an argument.  Of the four sisters in the
 > book, Jo, Meg, Beth, and Amy, your friend thinks that Jo was the
@@ -465,7 +467,6 @@ directory tree shown below.
 The `exercise-data` directory contains one file, `numbers.txt` and four directories:
 `animal-counts`, `creatures`, `proteins` and `writing` containing various files.
 
-
 For our first command,
 let's run `find .` (remember to run this command from the `shell-lesson-data/exercise-data` folder).
 
@@ -495,7 +496,6 @@ $ find .
 ./proteins/cubane.pdb
 ~~~
 {: .output}
-
 
 As always, the `.` on its own means the current working directory,
 which is where we want our search to start.
@@ -592,8 +592,8 @@ $ find . -name "*.txt"
 ~~~
 {: .output}
 
-> ## Listing vs. Finding
->
+## Listing vs. Finding
+
 > `ls` and `find` can be made to do similar things given the right options,
 > but under normal circumstances,
 > `ls` lists everything it can,
@@ -655,8 +655,8 @@ $ grep "searching" $(find . -name "*.txt")
 ~~~
 {: .output}
 
-> ## Matching and Subtracting
->
+## Matching and Subtracting
+
 > The `-v` option to `grep` inverts pattern matching, so that only lines
 > which do *not* match the pattern are printed. Given that, which of
 > the following commands will find all .dat files in `creatures`
@@ -664,10 +664,10 @@ $ grep "searching" $(find . -name "*.txt")
 > Once you have thought about your answer, you can test the commands in the
 > `shell-lesson-data/exercise-data` directory.
 >
-> 1.  `find creatures -name "*.dat" | grep -v unicorn`
-> 2.  `find creatures -name *.dat | grep -v unicorn`
-> 3.  `grep -v "unicorn" $(find creatures -name "*.dat")`
-> 4.  None of the above.
+> 1. `find creatures -name "*.dat" | grep -v unicorn`
+> 2. `find creatures -name *.dat | grep -v unicorn`
+> 3. `grep -v "unicorn" $(find creatures -name "*.dat")`
+> 4. None of the above.
 >
 > > ## Solution
 > >
@@ -685,8 +685,8 @@ $ grep "searching" $(find . -name "*.txt")
 > {: .solution}
 {: .challenge}
 
-> ## Binary Files
->
+## Binary Files
+
 > We have focused exclusively on finding patterns in text files. What if
 > your data is stored as images, in databases, or in some other format?
 >
@@ -717,8 +717,8 @@ And as Alfred North Whitehead wrote in 1911, 'Civilization advances by
 extending the number of important operations which we can perform
 without thinking about them.'
 
-> ## `find` Pipeline Reading Comprehension
-> 
+## `find` Pipeline Reading Comprehension
+
 > Write a short explanatory comment for the following shell script:
 >
 > ~~~
@@ -733,5 +733,3 @@ without thinking about them.'
 > > 3. Sort the output from step 2. numerically
 > {: .solution}
 {: .challenge}
-
-

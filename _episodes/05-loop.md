@@ -6,9 +6,11 @@ order: 6
 ---
 
 ## Questions
+
 - "How can I perform the same actions on many different files?"
 
 ## Objectives
+
 - "Write a loop that applies one or more commands separately to each file in a set of files."
 - "Trace the values taken on by a loop variable during execution of the loop."
 - "Explain the difference between a variable's name and its value."
@@ -17,6 +19,7 @@ order: 6
 - "Re-run recently executed commands without retyping them."
 
 ## Keypoints
+
 - "A `for` loop repeats commands once for every thing in a list."
 - "Every `for` loop needs a variable to refer to the thing it is currently operating on."
 - "Use `$name` to expand a variable (i.e., get its value). `${name}` can also be used."
@@ -78,9 +81,8 @@ CLASSIFICATION: equus monoceros
 ```
 {: .output}
 
+## Follow the Prompt
 
-> ## Follow the Prompt
->
 > The shell prompt changes from `$` to `>` and back again as we were
 > typing in our loop. The second prompt, `>`, is different to remind
 > us that we haven't finished typing a complete command yet. A semicolon, `;`,
@@ -115,8 +117,8 @@ For the third iteration, `$filename` becomes
 and `tail` on the output of that.
 Since the list was only three items, the shell exits the `for` loop.
 
-> ## Same Symbols, Different Meanings
->
+## Same Symbols, Different Meanings
+
 > Here we see `>` being used as a shell prompt, whereas `>` is also
 > used to redirect output.
 > Similarly, `$` is used as a shell prompt, but, as we saw earlier,
@@ -170,8 +172,8 @@ writing the code and the person reading it.
 Note also that loops can be used for other things than filenames, like a list of numbers
 or a subset of data.
 
-> ## Write your own loop
->
+## Write your own loop
+
 > How would you write a loop that echoes all 10 numbers from 0 to 9?
 >
 > > ## Solution
@@ -200,8 +202,8 @@ or a subset of data.
 > {: .solution}
 {: .challenge}
 
-> ## Variables in Loops
->
+## Variables in Loops
+
 > This exercise refers to the `shell-lesson-data/exercise-data/proteins` directory.
 > `ls *.pdb` gives the following output:
 >
@@ -274,8 +276,8 @@ or a subset of data.
 > {: .solution}
 {: .challenge}
 
-> ## Limiting Sets of Files
->
+## Limiting Sets of Files
+
 > What would be the output of running the following loop in the
 > `shell-lesson-data/exercise-data/proteins` directory?
 >
@@ -308,11 +310,11 @@ or a subset of data.
 > ~~~
 > {: .language-bash}
 >
-> 1.  The same files would be listed.
-> 2.  All the files are listed this time.
-> 3.  No files are listed this time.
-> 4.  The files `cubane.pdb` and `octane.pdb` will be listed.
-> 5.  Only the file `octane.pdb` will be listed.
+> 1. The same files would be listed.
+> 2. All the files are listed this time.
+> 3. No files are listed this time.
+> 4. The files `cubane.pdb` and `octane.pdb` will be listed.
+> 5. Only the file `octane.pdb` will be listed.
 >
 > > ## Solution
 > >
@@ -321,8 +323,8 @@ or a subset of data.
 > {: .solution}
 {: .challenge}
 
-> ## Saving to a File in a Loop - Part One
->
+## Saving to a File in a Loop - Part One
+
 > In the `shell-lesson-data/exercise-data/proteins` directory, what is the effect of this loop?
 >
 > ~~~
@@ -351,8 +353,8 @@ or a subset of data.
 > {: .solution}
 {: .challenge}
 
-> ## Saving to a File in a Loop - Part Two
->
+## Saving to a File in a Loop - Part Two
+
 > Also in the `shell-lesson-data/exercise-data/proteins` directory,
 > what would be the output of the following loop?
 >
@@ -364,13 +366,13 @@ or a subset of data.
 > ~~~
 > {: .language-bash}
 >
-> 1.  All of the text from `cubane.pdb`, `ethane.pdb`, `methane.pdb`, `octane.pdb`, and
->     `pentane.pdb` would be concatenated and saved to a file called `all.pdb`.
-> 2.  The text from `ethane.pdb` will be saved to a file called `all.pdb`.
-> 3.  All of the text from `cubane.pdb`, `ethane.pdb`, `methane.pdb`, `octane.pdb`, `pentane.pdb`
->     and `propane.pdb` would be concatenated and saved to a file called `all.pdb`.
-> 4.  All of the text from `cubane.pdb`, `ethane.pdb`, `methane.pdb`, `octane.pdb`, `pentane.pdb`
->     and `propane.pdb` would be printed to the screen and saved to a file called `all.pdb`.
+> 1. All of the text from `cubane.pdb`, `ethane.pdb`, `methane.pdb`, `octane.pdb`, and
+>    `pentane.pdb` would be concatenated and saved to a file called `all.pdb`.
+> 2. The text from `ethane.pdb` will be saved to a file called `all.pdb`.
+> 3. All of the text from `cubane.pdb`, `ethane.pdb`, `methane.pdb`, `octane.pdb`, `pentane.pdb`
+>    and `propane.pdb` would be concatenated and saved to a file called `all.pdb`.
+> 4. All of the text from `cubane.pdb`, `ethane.pdb`, `methane.pdb`, `octane.pdb`, `pentane.pdb`
+>    and `propane.pdb` would be printed to the screen and saved to a file called `all.pdb`.
 >
 > > ## Solution
 > > 3 is the correct answer. `>>` appends to a file, rather than overwriting it with the redirected
@@ -431,8 +433,8 @@ the `head` and `tail` combination selects lines 81-100
 from whatever file is being processed
 (assuming the file has at least 100 lines).
 
-> ## Spaces in Names
->
+## Spaces in Names
+
 > Spaces are used to separate the elements of the list
 > that we are going to loop over. If one of those elements
 > contains a space character, we need to surround it with
@@ -661,8 +663,8 @@ bash goostats.sh $datafile stats-$datafile; done
 ~~~
 {: .language-bash}
 
-> ## Beginning and End
->
+## Beginning and End
+
 > We can move to the beginning of a line in the shell by typing <kbd>Ctrl</kbd>+<kbd>A</kbd>
 > and to the end using <kbd>Ctrl</kbd>+<kbd>E</kbd>.
 {: .callout}
@@ -689,8 +691,8 @@ to examine one of the output files.
 It looks good,
 so she decides to get some coffee and catch up on her reading.
 
-> ## Those Who Know History Can Choose to Repeat It
->
+## Those Who Know History Can Choose to Repeat It
+
 > Another way to repeat previous work is to use the `history` command to
 > get a list of the last few hundred commands that have been executed, and
 > then to use `!123` (where '123' is replaced by the command number) to
@@ -713,8 +715,8 @@ so she decides to get some coffee and catch up on her reading.
 > `!458`.
 {: .callout}
 
-> ## Other History Commands
->
+## Other History Commands
+
 > There are a number of other shortcut commands for getting at the history.
 >
 > - <kbd>Ctrl</kbd>+<kbd>R</kbd> enters a history search mode 'reverse-i-search' and finds the
@@ -731,8 +733,8 @@ so she decides to get some coffee and catch up on her reading.
 > quicker than doing <kbd>↑</kbd> and editing the command-line.
 {: .callout}
 
-> ## Doing a Dry Run
->
+## Doing a Dry Run
+
 > A loop is a way to do many things at once --- or to make many mistakes at
 > once if it does the wrong thing. One way to check what a loop *would* do
 > is to `echo` the commands it would run instead of actually running them.
@@ -787,8 +789,8 @@ so she decides to get some coffee and catch up on her reading.
 > {: .solution}
 {: .challenge}
 
-> ## Nested Loops
->
+## Nested Loops
+
 > Suppose we want to set up a directory structure to organize
 > some experiments measuring reaction rate constants with different compounds
 > *and* different temperatures.  What would be the
@@ -814,4 +816,3 @@ so she decides to get some coffee and catch up on her reading.
 > > Try running the code for yourself to see which directories are created!
 > {: .solution}
 {: .challenge}
-
