@@ -233,6 +233,7 @@ or a subset of data.
 > Why do these two loops give different outputs?
 >
 > > ## Solution
+> >
 > > The first code block gives the same output on each iteration through
 > > the loop.
 > > Bash expands the wildcard `*.pdb` within the loop body (as well as
@@ -292,6 +293,7 @@ or a subset of data.
 > 4.  Only `cubane.pdb` is listed.
 >
 > > ## Solution
+> >
 > > 4 is the correct answer. `*` matches zero or more characters, so any file name starting with
 > > the letter c, followed by zero or more other characters will be matched.
 > {: .solution}
@@ -313,6 +315,7 @@ or a subset of data.
 > 5.  Only the file `octane.pdb` will be listed.
 >
 > > ## Solution
+> >
 > > 4 is the correct answer. `*` matches zero or more characters, so a file name with zero or more
 > > characters before a letter c and zero or more characters after the letter c will be matched.
 > {: .solution}
@@ -340,6 +343,7 @@ or a subset of data.
 > 4.  None of the above.
 >
 > > ## Solution
+> >
 > > 1. The text from each file in turn gets written to the `alkanes.pdb` file.
 > > However, the file gets overwritten on each loop iteration, so the final content of
 > > `alkanes.pdb`
@@ -766,6 +770,7 @@ so she decides to get some coffee and catch up on her reading.
 > {: .language-bash}
 >
 > > ## Solution
+> >
 > > The second version is the one we want to run.
 > > This prints to screen everything enclosed in the quote marks, expanding the
 > > loop variable name because we have prefixed it with a dollar sign.
@@ -801,6 +806,7 @@ so she decides to get some coffee and catch up on her reading.
 > {: .language-bash}
 >
 > > ## Solution
+> >
 > > We have a nested loop, i.e. contained within another loop, so for each species
 > > in the outer loop, the inner loop (the nested loop) iterates over the list of
 > > temperatures, and creates a new directory for each combination.

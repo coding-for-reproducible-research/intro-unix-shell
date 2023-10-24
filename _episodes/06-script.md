@@ -322,8 +322,8 @@ $ bash sorted.sh *.pdb ../creatures/*.dat
 > filenames as command-line arguments, and uses a variation of the above command
 > to print a list of the unique species appearing in each of those files separately.
 >
-## Solution
-
+> > ## Solution
+> >
 > > ~~~
 > > # Script to find unique species in csv files where species is the second data field
 > > # This script accepts any number of file names as command line arguments
@@ -382,8 +382,8 @@ we have a completely accurate record of how we created that figure.
 > running it. In fact, the shell *always* adds commands to the log
 > before running them. Why do you think it does this?
 >
-## Solution
-
+> > ## Solution
+> >
 > > If a command causes something to crash or hang, it might be useful
 > > to know what that command was, in order to investigate the problem.
 > > Were the command only be recorded after running it, we would not
@@ -498,8 +498,8 @@ Of course, this introduces another trade-off between flexibility and complexity.
 > 3. The first and the last line of each file in the `proteins` directory
 > 4. An error because of the quotes around `*.pdb`
 >
-## Solution
-
+> > ## Solution
+> >
 > > The correct answer is 2.
 > >
 > > The special variables $1, $2 and $3 represent the command line arguments given to the
@@ -536,9 +536,9 @@ Of course, this introduces another trade-off between flexibility and complexity.
 > $ bash longest.sh shell-lesson-data/exercise-data/writing txt
 > ~~~
 > {: .language-bash}
-
-## Solution
-
+>
+> > ## Solution
+> >
 > > ~~~
 > > # Shell script which takes two arguments:
 > > #    1. a directory name
@@ -591,9 +591,9 @@ Of course, this introduces another trade-off between flexibility and complexity.
 > echo $@.pdb
 > ~~~
 > {: .language-bash}
-
-## Solutions
-
+>
+> > ## Solutions
+> >
 > > In each case, the shell expands the wildcard in `*.pdb` before passing the resulting
 > > list of file names as arguments to the script.
 > >
@@ -646,8 +646,8 @@ Of course, this introduces another trade-off between flexibility and complexity.
 > What is the output showing you?
 > Which line is responsible for the error?
 >
-## Solution
-
+> > ## Solution
+> >
 > > The `-x` option causes `bash` to run in debug mode.
 > > This prints out each command as it is run, which will help you to locate errors.
 > > In this example, we can see that `echo` isn't printing anything. We have made a typo

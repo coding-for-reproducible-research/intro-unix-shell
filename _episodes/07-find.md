@@ -277,6 +277,7 @@ Miscellaneous:
 > 4. `grep -i "of" haiku.txt`
 >
 > > ## Solution
+> >
 > > The correct answer is 3, because the `-w` option looks only for whole-word matches.
 > > The other options will also match 'of' when part of another word.
 > {: .solution}
@@ -400,6 +401,7 @@ Miscellaneous:
 > yielding the correct result, elegance, readability, and speed.
 >
 > > ## Solutions
+> >
 > > ```
 > > for sis in Jo Meg Beth Amy
 > > do
@@ -668,6 +670,7 @@ $ grep "searching" $(find . -name "*.txt")
 > 4.  None of the above.
 >
 > > ## Solution
+> >
 > > Option 1. is correct. Putting the match expression in quotes prevents the shell
 > > expanding it, so it gets passed to the `find` command.
 > >
@@ -724,6 +727,7 @@ without thinking about them.'
 > {: .language-bash}
 >
 > > ## Solution
+> >
 > > 1. Find all files with a `.dat` extension recursively from the current directory
 > > 2. Count the number of lines each of these files contains
 > > 3. Sort the output from step 2. numerically
