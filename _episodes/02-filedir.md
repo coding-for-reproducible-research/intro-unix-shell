@@ -875,4 +875,15 @@ goodiff.sh   goostats.sh
 This is called **tab completion**,
 and we will see it in many other tools as we go on.
 
+### Other keyboard shortcuts
+
+There are other keyboard shortcuts which can speed up typing at the command line.
+Some commands that might be useful are:
+
+- <kbd>Ctrl<kbd>+<kbd>U</kbd>: Cut text to beginning of line
+- <kbd>Ctrl<kbd>+<kbd>R</kbd>: Search backwards in history
+- <kbd>Ctrl<kbd>+<kbd>L</kbd>: Clear screen
+
+There is a more exhaustive list in the ["readline" documentation](https://github.com/chzyer/readline/blob/master/doc/shortcut.md).
+
 [Arguments]: https://swcarpentry.github.io/shell-novice/reference.html#argument
