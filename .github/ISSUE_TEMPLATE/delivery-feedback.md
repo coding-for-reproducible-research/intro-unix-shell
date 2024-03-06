@@ -2,7 +2,7 @@
 name: Delivery Feedback
 about: Report on delivery of this workshop.
 title: ''
-labels: delivery feedback
+labels: delivery feedback, help wanted
 assignees: ejh243
 
 ---
